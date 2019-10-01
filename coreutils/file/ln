@@ -1,0 +1,68 @@
+[32m
+                cli.help                   
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m bietet Hilfe für die Kommandozeile (Command Line 
+Interface/CLI) und ist ein Projekt von Tutonaut.de. Weitere Infos unten.
+
+[31m
+###########################################
+##            ln                         ##
+###########################################
+
+[33m## Harte Verknüpfung für datei.txt setzen:
+[31m ln [0m~/datei.txt ~/links/datei.txt_hardlink
+
+[33m## Symbolische Verknüpfung für datei.txt setzen:
+[31m ln [0m--symbolic ~/datei.txt ~/links/datei.txt_symlink
+
+[33m## Verknüpfungen für alle txt-Dateien in Ziel (-t) erstellen:
+[31m ln [0m-t ~/backups/ ~./dateien/*.txt
+
+[33m## Nummerierte Backups für Zieldateien:
+[31m ln [0m--backup=numbered -t ~/backups/ ~./dateien/*.txt
+
+[33m## Verknüpfung auf datei.txt im aktuellen Verzeichnis:
+[31m ln [0m/irgend/ein/pfad/datei.txt
+
+
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+Der Aufruf ist immer [92mcurl cli.help/[31mSCHLAGWORT[0m. Als Schlagwörter 
+stehen zur Verfügung: [92malle GNU Core Utilities,[0m einige 
+[92mLinux-Standard-Tools[0m und einige [92mcli.help-eigene Seiten:[0m
+
+[33m## Startseite mit Infos über:[031
+[31mstart, index, main, hilfe [0moder[31m help
+
+[33m## Seite mit allen SCHLAGWÖRTERN als Liste:[31m
+liste, befehle, kommandos, tools, programme [0moder[31m list
+
+[33m## Seite mit ALLEN Hilfen zum Durchsuchen:[31m
+alles, komplett [0moder[31m dump
+
+[33m## Thematische Übersichten:[31m
+nutzer, rechte, aliasse, dateien, ordner, text, textverarbeitung, suche,
+prozesse, netzwerk, installieren, paketmanagement, pakete [0mund [31m upate.
+
+[33m## Seite mit Aliassen - als Anregungen:[31m
+aliasse
+
+[33m## Seite mit persönlicher Befehlssammlung (cheat sheet):[31m
+cheatsheet_mirco
+cheatsheet[92m_DeinName[0m ## Schick uns Dein persönliches cheat sheet als 
+Textdatei und wir stellen es unter [92mcli.help/cheatsheet_DeinName[0m 
+öffentlich zur Verfügung: cli@tutonaut.de.
