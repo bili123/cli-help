@@ -26,8 +26,6 @@ Nachzulesen in der [Wikipedia](https://de.wikipedia.org/wiki/Hallo-Welt-Programm
    1. Unter Linux:
    1. ...
 
-### Windows
-### Linux
 ## Nutzung
 
 Programmaufruf | Funktion
