@@ -34,15 +34,17 @@ foobar -v | Erweiterte Informationen
 foobar -t | Programm nur testen
 foobar -vt | Programm mit allen Optionen ausführen
 
-### Beispiele
-
-:smile:
-
-## Fehlerbehebung
-## Lizenz
 # ToDo:
 
 - [x] Readme anlegen
 - [x] Erste Formatierungen lernen
 - [ ] Readme vervollständigen
 - [ ] Readme veröffentlichen
+
+### Beispiele
+
+:smile:
+
+## Fehlerbehebung
+## Lizenz
+
