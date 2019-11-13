@@ -1,4 +1,5 @@
 # cli.help 
+### Ein Projekt von [Tutonaut.de](https://www.tutonaut.de)
 cli.help liefert Hilfe zu Command-Line-Interface-Werkzeugen, sprich Tools im Termnial. **Auf Deutsch, direkt im Terminal und ohne Client.** Inhaltlich gibt es nicht bloß die abstrakten Beschreibungen der Tool-eigenen Hilfen, sondern **echte Aufrufe** mit konkreten Dateinamen, Pfaden und Kombinationen von Optionen. Wo es sich anbietet gibt es zudem **typische Pipes** oder Hinweise zur Verwendung in **Schleifen und Abfragen.**
 
 cli.help liefert zudem aber auch **Übersichten:** Typische Aufgaben der Nutzerverwaltung, Tools für Systeminformationen, die wichtigsten Vorgehensweisen bei der Textverarbeitung, Seiten über Networking, Systemupdates, Paketmanagement, nützliche Alias und so weiter. 
@@ -49,14 +50,14 @@ Ihr könnt gerne Eure eigene Hilfe, einen Spickzettel oder ähnliche Dinge erste
 
     curl cli.help/cheatsheet_mm
    
-Passt dazu einfach die Vorlage-Datei (cheatsheet_vorlage) an und reicht sie ein: Via Mail, als Merge Request [(und zwar so)](https://www.tutonaut.de/aenderungen-in-github-projekten-einreichen/) oder wie auch immer. Die Inhalte sind natürlich **öffentlich.** Ich prüfe, ob die Formatierung passt, ansonsten könnt Ihr da rein schreiben was Ihr wollt.
+Passt dazu einfach die Vorlage-Datei (cheatsheet_vorlage) an und reicht sie ein: Via Mail, als Pull Request [(und zwar so)](https://www.tutonaut.de/aenderungen-in-github-projekten-einreichen/) oder wie auch immer. Die Inhalte sind natürlich **öffentlich.** Ich prüfe, ob die Formatierung passt, ansonsten könnt Ihr da rein schreiben was Ihr wollt.
 
 Der Kopfbereich aus der Vorlage bleibt wie er ist, also Titel und über-cli.help-Bereich. Den Rest könnt Ihr gerne anders gestalten. Wie genau das geht, habe ich in einen [ausführlicheren Artikel](https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/) gepackt.
 
 ## Mitmachen!
 Mitmachen ist hier wirklich mal einfach: Erstellt eigene Hilfeseiten mit der Vorlage, verbessert, korrigiert oder ergänzt vorhandene Seiten - oder empfehlt cli.help weiter, das hilft auf Dauer am meisten. **Oder stellt Fragen!** Wer weiß schon, was Ihr alles mit den CLI-Werkzeugen anstellt ...
 
-Und wenn Ihr helfen wollt, aber nicht wisst, wie Github funktioniert, was ein Merge Request ist oder wie genau die Syntax der Vorlage tickt - fragt einfach. Es gibt hier auch kein unfreundliches "Lies erstmal das Handbuch, Du ..." :wink:
+Und wenn Ihr helfen wollt, aber nicht wisst, wie Github funktioniert, was ein Pull Request ist oder wie genau die Syntax der Vorlage tickt - fragt einfach. Es gibt hier auch kein unfreundliches "Lies erstmal das Handbuch, Du ..." :wink:
 
 ## Lizenz
 Sämtliche Inhalte hier im Repo stehen unter Creative-Commons-Lizenz [CC-BY-SA.](https://creativecommons.org/licenses/by-sa/4.0/) Das heißt: Ihr könnt sie nach belieben verwenden, verändern und unter gleichen Bedingungen und Nennung des Original-Autors weitergeben. Eigene Änderungen müssen zudem kenntlich gemacht beziehungsweise erwähnt werden.
@@ -64,6 +65,9 @@ Sämtliche Inhalte hier im Repo stehen unter Creative-Commons-Lizenz [CC-BY-SA.]
 In der Praxis heißt das: Ihr könnt beispielsweise dieses Repository klonen, in meinegeilenhilfeseiten.de 2.0 umbenennen, Inhalte ändern und hinzufügen und Nutzern zur Verfügung stellen - auch in kommerziellen Umgebungen. In diesem Fall müsstet Ihr cli.help als Ursprungsprojekt nennen/verlinken und ebenso alles unter die CC-BY-SA-Lizenz stellen. Und Eure eigenen Änderungen könntet Ihr zum Beispiel in der Readme-Datei notieren. 
 
 Und wenn jemand aus irgendwelchen Gründen Inhalte in ein Projekt mit inkompatibler Lizenz übernehmen will: Einfach kurz melden - ich bin zwar durchaus Copyleft-Fan, aber die Vorteile permissiver Lizenzen sehe ich durchaus :neckbeard:
+
+## Urheber/Kontakt
+cli.help ist ein Projekt von Tutonaut.de/Mirco Lang
 
 
 
