@@ -67,12 +67,6 @@ In der Praxis heißt das: Ihr könnt beispielsweise dieses Repository klonen, in
 Und wenn jemand aus irgendwelchen Gründen Inhalte in ein Projekt mit inkompatibler Lizenz übernehmen will: Einfach kurz melden - ich bin zwar durchaus Copyleft-Fan, aber die Vorteile permissiver Lizenzen sehe ich durchaus :neckbeard:
 
 ## Urheber/Kontakt
-cli.help ist ein Projekt von Tutonaut.de/Mirco Lang
+cli.help ist ein Projekt von [Tutonaut.de/Mirco Lang](https://www.tutonaut.de/impressum) - zu erreichen über Pull Requests, [maschinist@tutonaut.de](mailto:maschinist@tutonaut.de) oder die Website.
 
-
-
-
-
-
-
-
+    echo Mötr qre Snsg zvg Ehpu frva. | tr n-za-m a-z
