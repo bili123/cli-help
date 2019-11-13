@@ -1,0 +1,29 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            dirname                    ##
+###########################################
+
+[33m## Verzeichnis ohne "/letzte-komponente.txt" ausgeben:
+[31m dirname [0mmein-ordner/mehr-ordner/letzte-komponente.txt
+
+[33m## Verzeichnisse ohne letzte Komponenten in einer Zeile (-z):
+[31m dirname [0m-z mein-ordner/test.txt mein-ordner-2/datei.txt
+
+[33m## Absoluten Pfad ohne letzte Komponente ausgeben:
+[31m dirname [0m~/mein-ordner-2/datei.txt[31m

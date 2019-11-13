@@ -1,0 +1,42 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            split                      ##
+###########################################
+
+[33m## datei.txt alle drei Zeilen (-l3) aufsplitten und
+Dateien mit Präfix x und fortlaufendem Suffix aa erstellen (xaa, xab etc.):
+[31m split [0m-l3 datei.txt
+
+[33m## Wie oben, aber mit Präfix foobar und Suffix aus drei (-a3) Ziffern (-d):
+[31m split [0m-l3 -a3 -d datei.txt foobar
+
+[33m## datei.txt in 10 Teile splitten, nicht in Zeilen splitten (l):
+[31m split [0m--numbers=l/10 datei.txt
+
+[33m## 6. von 10 Teilen im Terminal ausgeben, keine Dateien erstellen:
+[31m split [0m-nl/6/10 datei.txt
+
+[33m## Videodatei film.avi in 5 Teile (xaa-xae) splitten; dann wieder in film2.avi
+zusammenführen:
+[31m split [0m-n5 ~/ordner/film.avi
+[31m cat [0m~/ordner/x* > film2.avi
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/cat
+[31m curl [0mcli.help/csplit

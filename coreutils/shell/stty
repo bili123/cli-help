@@ -1,0 +1,49 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            stty                       ##
+###########################################
+
+[33m## Alle Settings des aktuellen Terminals zeigen:
+[31m stty [0m-a
+
+[33m## Settings von Terminal Nummer 2 zeigen:
+[31m stty [0m-F /dev/pts/2
+
+[33m## Settings in stty-lesbarem Format (zum Speichern):
+[31m stty [0m-g
+
+[33m## Einstellung hubcl setzen:
+[31m stty [0mhubcl
+
+[33m## Einstellung hubcl deaktivieren:
+[31m stty [0m-hubcl
+
+[33m## Einstellungs-Kombination cooked laden:
+[31m stty [0mcooked
+
+[33m## Extrem ausführliche Infos zu allen Einstellungen:
+[31m man[0m stty
+
+[33m## Wenn jemand zu diesem Thema etwas beisteuern kann,
+bitte einfach als Kommentar, Mail oder Pull Request über
+github.com/bili123/cli-help. Mehr Infos:
+[31m curl[0m cli.help
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/tty

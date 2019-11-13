@@ -1,0 +1,112 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+## Verfügbare Aufrufe/Tools, Stand 11/19 ##
+###########################################
+
+[33m## Alle Schlagwörter:
+
+[31mbasename
+cat
+chgrp
+chmod
+chown
+chroot
+cksum
+comm
+cp
+csplit
+cut
+date
+dd
+df
+dir
+dircolors
+dirname
+du
+echo
+env
+expand
+expr
+factor
+false
+fmt
+fold
+groups
+head
+hostid
+id
+install
+join
+link
+ln
+logname
+ls
+md5sum
+mkdir
+mkfifo
+mknod
+mv
+nice
+nl
+nohup
+od
+paste
+pathchk
+pinky
+pr
+printenv
+printf
+ptx
+pwd
+readlink
+rm
+rmdir
+seq
+sha1sum
+shred
+sleep
+sort
+split
+stat
+stty
+sum
+sync
+tac
+tail
+tee
+test
+touch
+tr
+true
+tsort
+tty
+uname
+unexpand
+uniq
+users
+vdir
+wc
+who
+whoami
+yes
+
+[33m## Ende der Schlagwörter
+
+## Um Seiten Stück für Stück zu sehen:
+[31m curl[0m cli.help/SCHLAGWORT | more

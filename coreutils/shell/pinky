@@ -1,0 +1,32 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            pinky                      ##
+###########################################
+
+[33m## Infos über Nutzer peter ausgeben (Login, Name, Aktivität etc.):
+[31m pinky [0mpeter
+
+[33m## Andere Infos ausgeben, schöner formatiert:
+[31m pinky [0m-l peter
+
+[33m## Nur Name, Terminal und Datum ausgeben:
+[31m pinky [0m-fq peter
+
+[33m## Schön formatierte Infos (l), aber ohne Home-Verzeichnis und Shell (b):
+[31m pinky [0m-lb peter

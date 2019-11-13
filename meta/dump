@@ -1,0 +1,2977 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            chgrp                      ##
+###########################################
+
+[33m## Gruppe einer Datei ändern:
+[31m chgrp [0mNeueGruppe ~/meine-datei
+
+[33m## Gruppe eines Ordners samt Inhalt, rekursiv ändern:
+[31m chgrp [0m-R NeueGruppe ~/mein-ordner
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Gruppen und Nutzer einer Datei:
+[31m ls [0m-l ~/meine-datei
+
+[33m## Hilfe zu groups:
+[31m curl [0m-s cli.help/groups
+
+[33m## Besitzer ändern:
+[31m curl [0m-s cli.help/chown
+
+[33m## Rechte ändern:
+[31m curl [0m-s cli.help/chmod[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            chmod                      ##
+###########################################
+
+[33m## Gruppe Schreibrechte für Datei hinzufügen:
+[31m chmod [0mg+w ~/meine-datei
+
+[33m## Anderen (Others) Leserechte entziehen:
+[31m chmod [0mo-r ~/meine-datei
+
+[33m## Rechte für einen Ordner rekursiv auf 755 setzen:
+[31m chmod [0m-R 755 ~/mein-ordner/
+
+[33m## Alle Rechte für User, Gruppe, Others neu setzen:
+[31m chmod [0mu=rwx,g=rx,o=r ~/meine-datei
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Aktuelle Rechte einer Datei anzeigen:
+[31m ls [0m-l ~/meine-datei
+
+[33m## Hilfe zu groups:
+[31m curl [0m-s cli.help/groups
+
+[33m## Besitzer ändern:
+[31m curl [0m-s cli.help/chown
+
+[33m## Grupppen ändern:
+[31m curl [0m--s cli.help/chgrp
+
+[33m## Rechte-Notationen - je für Besitzer, Gruppe, andere:
+[31mOktal   Binär   Symbol   Menschlich[0m
+0       000              nichts
+1       001     x        ausführen
+2       010     w        schreiben
+3       011     rw       schreiben, lesen 
+4       100     r        lesen
+5       101     rx       lesen, ausführen
+6       110     rw       lesen, schreiben 
+7       111     rwx      lesen, schreiben, ausführen[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            chown                      ##
+###########################################
+
+[33m## Besitzer/Nutzer einer Datei ändern:
+[31m chown [0mpeter ~/meine-datei
+
+[33m## Besitzer rekursiv für Ordner ändern:
+[31m chown [0m-R peter ~/mein-ordner
+
+[33m## Nutzer und Gruppe einer Datei ändern:
+[31m chown [0mpeter:gruppe123 ~/meine-datei
+
+[33m## Nutzer nur bei gegebenem Nutzer ändern:
+[31m chown [0m--from=thomas:gruppe999 peter:gruppe123 ~/meine-datei
+
+[33m## Sym-Links statt der verlinkten Dateien behandeln:
+[31m chown [0m-R -h peter ~/mein-ordner
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Gruppen und Nutzer einer Datei:
+[31m ls [0m-l ~/meine-datei
+
+[33m## Rechte ändern:
+[31m curl [0m-s cli.help/chmod
+
+[33m## Besitzer ändern:
+[31m curl [0m-s cli.help/chown
+
+[33m## Gruppen ändern:
+[31m curl [0m--s cli.help/chgrp[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            cp                         ##
+###########################################
+
+[33m## Datei von a nach b kopieren:
+[31m cp [0m~/datei.txt ~/meinordner/datei-kopie.txt
+
+[33m## Ordnerinhalt rekursiv kopieren (r), falls Datei vorhanden nachfragen (i):
+[31m cp [0m-ri ~/ordner/ ~/backups/
+
+[33m## Ordnerinhalt rekursiv mit Attributen/Rechten (a) und auch versteckten Dateien (.) kopieren:
+[31m cp [0m-a ~/. ~/backups/
+
+[33m## Bestehende txt-Dateien nicht überschreiben:
+[31m cp [0m-n ~/*.txt ~/backups/
+
+[33m## Nur überschreiben falls neuer als Zieldatei:
+[31m cp [0m-u ~/*.txt ~/backups/
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Kopieren über ein Netzwerk:
+[31m curl [0m-s cli.help/scp
+
+[33m## Dateien verschieben:
+[31m curl [0m-s cli.help/mv[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            dd                         ##
+###########################################
+
+[33m## Abbild von Partition als Image mit Statusanzeige:
+[31mdd [0m-if=/dev/sda1 of=/home/peter/mein-sda1-image status=progress
+
+[33m## Datenträger mit zufällingen Zeichen überschreiben:
+[31mdd [0m-if=/dev/urandom of=/dev/sda
+
+[33m## 5 mal 1 MB große zufällige Blöcke als 5-MB-Datei schreiben:
+[31mdd [0m-if=/dev/urandom of=~/meine-datei bs=1M count=5
+
+[33m## Festplatte sda auf sdb klonen:
+[31mdd [0m-if=/dev/sda of=/dev/sdb
+
+[33m## Partition als komprimiertes Image speichern:
+[31mdd [0m-if=/dev/sda1 | [31mgzip [0m> ~/mein-komprimiertes-image.img.gz
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Image mounten:
+[31msudo mount [0m-o loop ~/mein-image.img /media/mein-mount-point
+
+[33m## Geräteeigenschaften auflisten:
+[31msudo blkid [0m
+
+[33m## Dateisystem auf Partitionsgröße ausdehnen:
+[31msudo resize2fs [0m/dev/sdb1
+
+[33m## UUID neu setzen:
+[31msudo tune2fs [0m-U random /dev/sdb1
+
+[33m## Label neu setzen:
+[31msudo e2label [0m/dev/sdb1 neuername[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            df                         ##
+###########################################
+
+[33m## Dateisystme auflisten, menschenlesbar (-h):
+[31m df [0m-h
+
+[33m## Dateisysteme mit angegebenen Infos ausgeben:
+[31m df [0m-h --output=source,target,size,used,avail
+
+[33m## Dateisysteme ohne die tmpfs-Laufwerke:
+[31m df [0m--exclude-type=tmpfs
+
+[33m## Dateisysteme mit Zusammenfassung des Speichers:
+[31m df [0m--total
+
+[33m## Eine hübsche, nützliche Ausgabe:
+[31m df [0m-h --output=source,size,used,avail,target --exclude-type=tmpfs --total[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            dir                        ##
+###########################################
+
+[33m## Bitte ls statt dir nutzen:
+[31m curl -s [0mcli.help/ls[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            dircolors                  ##
+###########################################
+
+[33m## 1. Datei für ls-Farbdefinitionen erstellen:
+[31m dircolors [0m-p > ~/.dircolors 
+
+[33m## 2. Datei für ls-Farbdefinitionen bearbeiten:
+[31m nano [0m~/.dircolors 
+
+[33m## 3. Farbdefinitionen per Umgebungsvariable laden:
+[31m eval [0m"$(dircolors -b ~/.dircolors)" [31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            install                    ##
+###########################################
+
+[33m## Öhmmm... install wird wohl hauptsächlich in Makefiles verwendet, um
+Dateien zu kopieren und den Zieldateien entsprechende Rechte zu verpassen. Wer
+Makefiles erstellt wird kaum hier landen - sollte ich mich irren: Mail an
+maschinist@tutonaut.de, schimpfen und ich schreibe was Sinnvolles ;)
+
+Für alle anderen:
+
+[31m curl [0m-s cli.help/cp[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            ln                         ##
+###########################################
+
+[33m## Harte Verknüpfung für datei.txt setzen:
+[31m ln [0m~/datei.txt ~/links/datei.txt_hardlink
+
+[33m## Symbolische Verknüpfung für datei.txt setzen:
+[31m ln [0m--symbolic ~/datei.txt ~/links/datei.txt_symlink
+
+[33m## Verknüpfungen für alle txt-Dateien in Ziel (-t) erstellen:
+[31m ln [0m-t ~/backups/ ~./dateien/*.txt
+
+[33m## Nummerierte Backups für Zieldateien:
+[31m ln [0m--backup=numbered -t ~/backups/ ~./dateien/*.txt
+
+[33m## Verknüpfung auf datei.txt im aktuellen Verzeichnis:
+[31m ln [0m/irgend/ein/pfad/datei.txt[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            ls                         ##
+###########################################
+
+[33m## Verzeichnisse zuerst anzeigen:
+[31m ls [0m--group-directories-first
+
+[33m## Ausführliche Infos (l) aller (a) Dateien:
+[31m ls [0m-al
+
+[33m## Nur Ordner anzeigen:
+[31m ls [0m-d */
+
+[33m## Folgen 2 - 4 aus 09 Staffeln einer Serie anzeigen, benannt nach
+dem Muster: "irgendwas_s01_e02_irgendwas":
+[31m ls [0m-*s0?_e0[2-4]*
+
+[33m## stat für jede Datei in Ordner ausführen:
+[31m ls [0m| xargs stat -
+
+[33m## Irgendwas (hier echo) für jede Datei der ls-Ausgabe ausführen:
+[0mfor f in $([31mls[0m); do echo $f ist super; done
+
+[33m## Versteckte Verzeichnisse anzeigen:
+[31m ls [0m-d .*/[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            mkdir                      ##
+###########################################
+
+[33m## Verzeichnis samt Überverzeichnissen (p=Parents) erstellen:
+[31m mkdir [0m-p meinedateien/musik/punk/deutsch
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Verzeichnis samt Unterverzeichnissen anzeigen:
+[31m tree [0mmeinedateien[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            mkfifo                     ##
+###########################################
+
+[33m## Named Pipe anlegen:
+[31m mkfifo [0mmeine-pipe
+
+[33m## Daten in Terminal 1 in die meine-pipe leiten:
+[31m echo [0mHallo Welt > meine-pipe
+
+[33m## meine-pipe in Terminal 2 auslesen:
+[31m cat [0mmeine-pipe[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            mknod                      ##
+###########################################
+
+[33m## Gerät "dev/console" erstellen:
+[31m mknod [0m-m 622 /dev/console c 5 1
+
+[33m## Wer Named Pipes erstellen will:
+[31m curl [0mcli.help/mkfifo[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            mv                         ##
+###########################################
+
+[33m## Datei von a nach b verschieben:
+[31m mv [0m~/datei.txt ~/meinordner/
+
+[33m## Datei von a nach b verschieben und umbenennen:
+[31m mv [0m~/datei.txt ~/meinordner/datei-kopie.txt
+
+[33m## Wenn Zieldatei vorhanden, diese als Backup behalten:
+[31m mv [0m~/datei.txt ~/meinordner/
+
+[33m## Nur überschreiben falls neuer als Zieldatei:
+[31m mv [0m-u ~/*.txt ~/meinordner/
+
+[33m## Aufgelistete Dateien in Zielverzeichnis (-t) kopieren:
+[31m mv [0m-t ~/meinordner datei.txt datei22.txt foobar.avi
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Kopieren über ein Netzwerk:
+[31m curl [0m-s cli.help/scp
+
+[33m## Dateien verschieben:
+[31m curl [0m-s cli.help/cp[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            rm                         ##
+###########################################
+
+[33m## Datei löschen:
+[31m rm [0m~/meinordner/datei.txt
+
+[33m## Leeres Verzeichnis löschen:
+[31m rm [0m-d ~/leererordner
+
+[33m## Ordner samt Inhalten rekursiv löschen:
+[31m rm [0m-r ~/testdateien/
+
+[33m## Vor'm Löschen jedesmal nachfragen:
+[31m rm [0m-i ~/meinordner/*.bak
+
+[33m## Das ganze System unreparierbar schrotten:
+[0m sudo [31m rm [0m-rf --no-preserve-root /[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            rmdir                      ##
+###########################################
+
+[33m## Verzeichnisse löschen wenn sie leer sind:
+[31m rmdir [0m~/meinordner ~/backups
+
+[33m## Verzeichnis und Eltern (-p) löschen sofern leer:
+[31m rmdir [0m-p ~/meinordner/subordner/ordner2/unsinn/
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Kopieren:
+[31m curl [0m-s cli.help/cp[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            shred                      ##
+###########################################
+
+[33m## Datei 5-fach mit zufälligen Zeichen überschreiben:
+[31m shred [0m-n5 ~/datei.txt
+
+[33m## Datei überschreiben und dann löschen:
+[31m shred [0m-u ~/datei.txt
+
+[33m## Abschließend mit Nullen füllen, um das Schreddern zu verbergen:
+[31m shred [0m-z ~/datei.txt
+
+[33m## Nur 12 Bytes vom Anfang der Datei schreddern:
+[31m shred [0m-s12 ~/datei.txt[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sync                       ##
+###########################################
+
+[33m## Gecachete Dateien des Nutzers sofort auf Disk synchronisieren:
+[31m sync [0m 
+
+[33m## Daten der angegebenen Dateien syncen:
+[31m sync [0m-d datei1.txt datei2.txt
+
+[33m## Alle Dateisysteme synchronisieren:
+[0msudo [31msync [0m 
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            touch                      ##
+###########################################
+
+[33m## Zugriffs- und Modifikationszeit auf "vor 20 Minuten" ändern:
+[31m touch [0m-d "20 minutes ago" datei.txt 
+
+[33m## Zugriffs- und Modifikationszeit auf 31.05.2001 17:45 Uhr ändern:
+[31m touch [0m-t 200105311745 datei.txt
+
+[33m## Nur Zugriffszeit ändern:
+[31m touch [0m-a "20 minutes ago" datei.txt
+
+[33m## Nur Modifikationszeit ändern:
+[31m touch [0m-m "20 minutes ago" datei.txt
+
+[33m## Leere Datei erstellen:
+[31m touch [0m~/meinordner/datei.txt[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            vdir                       ##
+###########################################
+
+[33m## Bitte ls statt vdir nutzen:
+[31m curl -s [0mcli.help/ls[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            basename                   ##
+###########################################
+
+[33m## Dateinamen ohne Pfad:
+[31m basename [0m~/meinedatei.txt
+
+[33m## Dateinamen ohne Pfad und Dateiendung (-s) ausgeben:
+[31m basename [0m-s ~/meinedatei.txt
+
+[33m## Alle Namen von EXE-Dateien ohne Endung/Pfad:
+[31m basename [0m-s .exe *.exe
+
+[33m## Mehrere (-a) Dateinamen ohne Pfad ausgeben:
+[31m basename [0m-a ~/meinordner/* [31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            chroot                     ##
+###########################################
+
+[33m## Beispiel: bash in chroot-Umgebung ausführen (Debian):
+
+[33m1. chroot-Ordner(struktur) anlegen:
+[31m mkdir [0m/home/peter/chrootordner/{bin,lib,lib64}
+
+[33m2. bash kopieren
+[31m cp [0m-v /bin/bash /home/peter/chrootordner/bin
+
+[33m3. bash-Abhängigkeiten auslesen:
+[31m ldd [0m/bin/bash (=ERGEBNISSE)
+
+[33m4. lib-Abhängigkeiten kopieren:
+[31m cp [0m-v /lib/ERGEBNISSE /home/peter/chrootordner/lib
+
+[33m5. lib64-Abhängigkeiten kopieren:
+[31m cp [0m-v /lib/ERGEBNISSE /home/peter/chrootordner/lib64
+
+[33m6. bash in chroot-Umgebung ausführen:
+[31m chroot [0m/home/peter/chrootordner /bin/bash
+
+[33m## chroot mit Nutzer peter und Gruppe meinenutzer ausführen:
+[31m chroot [0m--userspec=peter:meinenutzer /home/peter/chrootordner /bin/bash[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            date                       ##
+###########################################
+
+[33m## Datum wie "Sonntag,20.10.2019" ausgeben:
+[31m date [0m+%A,%d.%m.%Y
+
+[33m## Sekunden seit 1.1.1970 (aka Unixzeit):
+[31m date [0m+%s
+
+[33m## Datum der letzten Änderung an Datei:
+[31m date [0m--reference=~/meinedatei.txt
+
+[33m## Kalenderwoche (ISO) ausgeben:
+[31m date [0m+%V
+
+[33m## Datum in New York ausgeben:
+[31m TZ[0m=America/New_York date
+
+[33m## Datum hier, wenn in New York 10.00 Uhr:
+[31m date [0m--date='"TZ=America/New_York" 10:00'
+
+[33m## In diesem Zusammenhang auch interessant:
+
+[33m## Zeitzone interaktiv bestimmen:
+[31m tzselect [31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            dirname                    ##
+###########################################
+
+[33m## Verzeichnis ohne "/letzte-komponente.txt" ausgeben:
+[31m dirname [0mmein-ordner/mehr-ordner/letzte-komponente.txt
+
+[33m## Verzeichnisse ohne letzte Komponenten in einer Zeile (-z):
+[31m dirname [0m-z mein-ordner/test.txt mein-ordner-2/datei.txt
+
+[33m## Absoluten Pfad ohne letzte Komponente ausgeben:
+[31m dirname [0m~/mein-ordner-2/datei.txt[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            du                         ##
+###########################################
+
+[33m## Größe aller Unterverzeichnisse, menschenlesbar (-h):
+[31m du [0m-h ./
+
+[33m## Wie oben, jedoch ohne versteckte Verzeichnisse:
+[31m du [0m-h --exclude="./.*"
+
+[33m## Verzeichnisgröße, aber nur zwei Ebenen tief:
+[31m du [0m--max-depth=2
+
+[33m## Nur Zusammenfassung/Gesamtgröße anzeigen:
+[31m du [0m-s
+
+[33m## Zusammenfassung zusätzlich anzeigen:
+[31m du [0m-c
+
+[33m## Auch Größe von Dateien anzeigen, zusätzlich Änderungsdatum:
+[31m du [0m-a --time
+
+[33m## Nicht versteckte Ordner/Dateien über 50 Megabyte auflisten:
+[31m du [0m-hac --exclude="./.*" --threshold=50M[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            echo                       ##
+###########################################
+
+[33m## Hallo Welt schreiben ;)
+[31m echo [0mHallo Welt
+
+[33m## Keinen Zeilenumbruch anfügen:
+[31m echo [0m-n Hallo Welt
+
+[33m## Hallo und Welt in je eine Zeile schreiben:
+[31m echo [0m-e "Hallo\nWelt"
+
+[33m## Hallo Welt in eine Datei schreiben:
+[31m echo [0mHallo Welt > ~/datei.txt
+
+[33m## Hallo Welt an eine Datei anhängen:
+[31m echo [0mHallo Welt >> ~/datei.txt
+
+[33m## Text plus Befehlsausgabe ausgeben:
+[31m echo [0m"Verzeichnisinhalt: $(ls)" [31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            env                        ##
+###########################################
+
+[33m## Alle Umgebungsvariablen anzeigen:
+[31m env [0m
+
+[33m## bash mit (fast) leerer Umgebung starten:
+[31m env [0m-i /bin/bash
+
+[33m## bash mit (temporär) geändertem Home-Verzeichnis öffnen:
+[31m env [0mHOME=/home/peter/temp-home-ordner /bin/bash
+
+[33m## bash ohne HOME-Umgebungsvariable öffnen:
+[31m env [0m-u HOME /bin/bash
+
+[33m## shebang-Zeile mit env (findet bash auch wenn nicht unter /bin):
+[31m #!/usr/bin/env [0mbash[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            expr                       ##
+###########################################
+
+[33m## 3 + 5 ausrechnen:
+[31m expr [0m3 + 5
+
+[33m## Anzahl Zeichen in einer Datei ausgeben:
+[31m expr [0mlength "$(cat ~/datei.txt)"
+
+[33m## 5 Zeichen ab Position 4 aus datei.txt (-> 123abcde9) ausgeben:
+[31m expr [0msubstr "$(cat ~/datei.txt)" 4 5
+
+[33m## Stelle des ersten Vorkommens von c oder b in abcde:
+[31m expr [0mindex abcde cb
+
+[33m## Anzahl Stellen, die von Beginn an identisch sind (hier: 3):
+[31m expr [0mmatch "abcdefg" "abc"
+
+[33m## expr in einer if-Abfrage nutzen:
+[0mif $([31mexpr[0m 4 > 2); [0mthen echo wahr; else echo falsch; fi[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            factor                     ##
+###########################################
+
+[33m## Faktoren von 9 ausgeben (also 3 ...):
+[31m factor [0m9
+
+[33m## Ganze Zahlen ab 1 per Endlosschleife faktorisieren:
+[0mn=1
+while true; do [31mfactor[0m $n && ((n++)); done
+
+[33m## Alle Primzahlen bis 100 ausgeben:
+[0mn=1
+while [ $n -le 100 ]; do [31mfactor[0m $n | awk '{if ($3=="") print $2}' && ((n++)); done
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            false                      ##
+###########################################
+
+[33m## Exit-Code UNERFOLGREICH ausgeben:
+[31m false [0m
+
+[33m## Mal so richtig gepflegt UNERFOLGREICH nichts tun, außer CPU-Zeit zu verschwenden, für immer:
+[0m while true; do [31mfalse[0m; done
+
+[33m## Nichts tun mit viel zu viel Aufwand:
+[0m while false; do [31mfalse[0m; done
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/true
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            groups                     ##
+###########################################
+
+[33m## Gruppenzugehörigkeiten von Nutzer peter anzeigen:
+[31m groups [0mpeter[31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            hostid                     ##
+###########################################
+
+[33m## IP-Adresse des Systems als Hexadezimalinterpretation darstellen
+(als Host-ID nutzbar) - auch wenn das eher selten und eher wenig nützlich ist:
+[31m hostid [0m [31m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            id                         ##
+###########################################
+
+[33m## Gruppennamen und -nummern zu Nutzer peter ausgeben:
+[31m id [0mpeter
+
+[33m## Gruppennummern des aktuellen Benutzers ausgeben:
+[31m id [0m-G
+
+[33m## Nur aktuellen Nutzernamen ausgeben:
+[31m id [0m-und
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/whoami
+[31m curl [0mcli.help/who
+[31m curl [0mcli.help/users
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            link                       ##
+###########################################
+
+[33m## Verknüpfung datei_link.txt auf datei.txt erstellen:
+[31m link [0m~/datei.txt ~/arbeitsverzeichnis/datei_link.txt
+
+[33m## Umfangreichere Verknüpfungsmöglichkeiten bietet ln:
+[31m curl [0mcli.help/ln
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            logname                    ##
+###########################################
+
+[33m## Login-Name des aktuellen Benutzers ausgeben:
+[31m logname [0m
+
+[33m## Dieselbe Ausgabe per Umgebungsvariable:
+[31m echo [0m$LOGNAME
+
+[33m## Dieselbe Ausgabe mit mehr Aufwand ;):
+[31m env [0m| grep LOGNAME | cut -c9-
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            nice                       ##
+###########################################
+
+[33m## Gimp mit um 10 erhöhter Prozesspriorität starten:
+[31m nice [0m-n -10 gimp
+
+[33m## Gimp mit maximaler Prozesspriorität (-20) starten:
+[31m nice [0m-20 gimp
+
+[33m## Thunderbird mit niedrigster Prozesspriorität starten:
+[31m nice [0m-n +19 thunderbird
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            nohup                      ##
+###########################################
+
+[33m## Gimp im Hintergrund starten; nicht schließen
+## wenn Terminalfenster geschlossen wird (oft eh Standardverhalten):
+[31m nohup [0mgimp
+
+[33m## Wie oben, aber mit erhöhter Prozesspriorität:
+[31m nohup [0mnice -20 gimp
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/renice
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            pathchk                    ##
+###########################################
+
+[33m## Dateinamen im Home-Verzeichnis auf POSIX-Portabilität checken
+## (zum Beispiel max. 14 byte lange Namen) - in der Praxis heute kaum relevant:
+[31m pathchk [0m~/*
+
+[33m## Dateinamen auf leere Namen und anführenden - prüfen:
+[31m pathchk [0m-P
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            pinky                      ##
+###########################################
+
+[33m## Infos über Nutzer peter ausgeben (Login, Name, Aktivität etc.):
+[31m pinky [0mpeter
+
+[33m## Andere Infos ausgeben, schöner formatiert:
+[31m pinky [0m-l peter
+
+[33m## Nur Name, Terminal und Datum ausgeben:
+[31m pinky [0m-fq peter
+
+[33m## Schön formatierte Infos (l), aber ohne Home-Verzeichnis und Shell (b):
+[31m pinky [0m-lb peter
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            printenv                   ##
+###########################################
+
+[33m## Umbebungsvariable HOME ausgeben:
+[31m printenv [0mHOME
+
+[33m## Alle Umbebungsvariablen ausgeben:
+[31m printenv [0m
+
+[33m## Hier auch interessant:
+[31m curl [0mcli.help/env
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            printf                     ##
+###########################################
+
+[33m## "Hallo Zeilenumbruch Welt Zeilenumbruch" ausgeben:
+[31m printf [0m"Hallo\nWelt\n"
+
+[33m## Nur Hallo (1. Feld) ausgeben (per $a):
+[0m a=$(echo Hallo Welt) && [31mprintf $a
+
+[33m## Hallo Welt ausgeben (per "$a"):
+[0m a=$(echo Hallo Welt) && [31mprintf "$a"
+
+[33m## "1 TAB 2 VERTIKALER TAB \" ausgeben:
+[31m printf [0m"1\t2\v\\"
+
+[33m## Alle Formatierungen von printf anzeigen:
+[31m man [0mprintf
+
+[33m## In diesem Zusammenhang auch interessant:
+[31m curl [0mcli.help/echo
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            pwd                        ##
+###########################################
+
+[33m## Das aktuelle Verzeichnis ausgeben:
+[31m pwd [0m
+
+[33m## Das aktuelle Verzeichnis ausgeben:
+[31m echo [0m$PWD
+
+[33m## Das aktuelle Verzeichnis ausgeben:
+[31m printenv [0mPWD
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/printenv
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            readlink                   ##
+###########################################
+
+[33m## Quelldateiname einer symbolischen Verknüpfung ausgeben:
+[31m readlink [0m~/datei-verknüpfung.txt
+
+[33m## Namen samt absolutem Pfad ausgeben:
+[31m readlink [0m-f ~/datei-verknüpfung.txt
+
+[33m## Alle Dateien im Verzeichnis samt Pfad, Verknüpfungen aufgelöst:
+[31m readlink [0m-f ./*
+
+[33m## Alle Verknüpfungen filtern und Ziele ausgeben:
+[0mls -al | grep '\->' | [31mreadlink [0m~/mein-ordner/*
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/ln
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            seq                        ##
+###########################################
+
+[33m## Zahlen von 1 bis 10 in ausgeben:
+[31m seq [0m1 10
+
+[33m## Zahlen von 1 bis 10 in Zweierschritten ausgeben:
+[31m seq [0m1 2 10
+
+[33m## Zahlen von 1 bis 10, getrennt mit Unterstrichen ausgeben:
+[31m seq [0m--separator=_ 1 10
+
+[33m## Kleine Zahlen mit Nullen auffüllen:
+[31m seq [0m-w 1 10
+
+[33m## Eine Schleife zehn mal ausführen:
+[0mfor i in $([31mseq[0m 1 10); do echo Hallo; done
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sleep                      ##
+###########################################
+
+[33m## 5 Sekunden nichts tun:
+[31m sleep [0m5
+
+[33m## 5 Minuten nichts tun:
+[31m sleep [0m5m
+
+[33m## 5 Tage und 3 Stunden nichts tun:
+[31m sleep [0m5d 3h
+
+[33m## Typische Nutzung von sleep in Schleife:
+[0mwhile true; do ping -c1 example.com && [31msleep[0m 10; done
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            stat                       ##
+###########################################
+
+[33m## Statusdaten von datei.txt anzeigen:
+[31m stat [0m~/datei.txt
+
+[33m## Nur Zugriffsrechte in Octal-Notation:
+[31m stat [0m--format=%a ~/datei.txt
+
+[33m## Statusdaten einzeilig ausgeben:
+[31m stat [0m-t ~/datei.txt
+
+[33m## Dateisystemstatus ausgeben:
+[31m stat [0m-f /dev/sda1
+
+[33m## Status aller .txt-Dateien im aktuellen Verzeichnis:
+[0mfor i in $(ls *.txt); do [31mstat[0m $i; done
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            stty                       ##
+###########################################
+
+[33m## Alle Settings des aktuellen Terminals zeigen:
+[31m stty [0m-a
+
+[33m## Settings von Terminal Nummer 2 zeigen:
+[31m stty [0m-F /dev/pts/2
+
+[33m## Settings in stty-lesbarem Format (zum Speichern):
+[31m stty [0m-g
+
+[33m## Einstellung hubcl setzen:
+[31m stty [0mhubcl
+
+[33m## Einstellung hubcl deaktivieren:
+[31m stty [0m-hubcl
+
+[33m## Einstellungs-Kombination cooked laden:
+[31m stty [0mcooked
+
+[33m## Extrem ausführliche Infos zu allen Einstellungen:
+[31m man[0m stty
+
+[33m## Wenn jemand zu diesem Thema etwas beisteuern kann,
+bitte einfach als Kommentar, Mail oder Pull Request über
+github.com/bili123/cli-help. Mehr Infos:
+[31m curl[0m cli.help
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/tty
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            tee                        ##
+###########################################
+
+[33m## eingabe.txt auf Standardausgabe und in ausgabe.txt ausgeben:
+[31m tee [0mausgabe.txt < eingabe.txt
+
+[33m## eingabe.txt in ausgabe.txt anhängen:
+[31m tee [0m-a ausgabe.txt < eingabe.txt
+
+[33m## eingabe.txt an alle txt-Dateien anhängen:
+[0mcat eingabe.txt | [31mtee [0m-a *.txt
+
+[33m## Dateien 1.txt - 5.txt erstellen und mit eingabe.txt füllen:
+[31m tee [0m./{1,2,3,4,5}.txt < eingabe.txt
+
+[33m## eingabe.txt an alle txt-Dateien anhängen, per Schleife:
+[0m for i in $(ls *.txt); do [31mtee [0m$i < eingabe.txt; done
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/echo
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            test                       ##
+###########################################
+
+[33m## Testen, ob datei.txt existiert (Rückgabe: TRUE):
+[31m test [0mdatei.txt
+
+[33m## Testen, ob datei.txt existiert - andere Notation:
+[31m [[ [0mdatei.txt [31m]]
+
+[33m## Testen, ob Fotos existiert und ein Verzeichnis ist:
+[31m test [0m-d Fotos
+
+[33m## Testen, ob datei.txt UND foobar existieren:
+[31m test [0mdatei.txt -a foobar
+
+[33m## Testen, ob datei.txt ODER foobar existiert:
+[31m test [0mdatei.txt -o foobar
+
+[33m## test in einer if-Abfrage benutzen:
+[0mif $([31mtest[0m datei.txt); then echo "Datei gibt es."; else echo "Datei gibt es nicht"; fi
+
+[33m## test in if-Abfrage, aber mit eckigen Klammern:
+[0mif [31m[[[0m datei.txt[31m ]][0m; then echo "Datei gibt es."; else echo "Datei gibt es nicht"; fi
+
+[33m## Testen, ob 8 kleiner als 9 ist:
+[31m [[ [0m8 -lt 9 [31m]]
+
+[33m## Testen, ob der String "foobar" IRGENDWO im Text von datei.txt vorkommt: 
+[0mif [31m[[[0m $(cat datei.txt) = *foobar* [31m]][0m; then echo "Ist enthalten."; else echo "Ist nicht enthalten"; fi
+
+[33m## Testen, ob der String "foobar" AM ZEILENANFANG im Text von datei.txt vorkommt: 
+[0mif [31m[[[0m $(cat datei.txt) = foobar* [31m]][0m; then echo "Ist enthalten."; else echo "Ist nicht enthalten"; fi
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/true
+[31m curl [0mcli.help/false
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            true                       ##
+###########################################
+
+[33m## Exit-Code ERFOLGREICH ausgeben:
+[31m true [0m
+
+[33m## Mal so richtig ERFOLGREICH gepflegt nichts tun, außer CPU-Zeit zu verschwenden, für immer:
+[0m while true; do [31mtrue[0m; done
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/false
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            tty                        ##
+###########################################
+
+[33m## Namen/Datei des aktuellen Terminals ausgeben:
+[31m tty [0m
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/stty
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            uname                      ##
+###########################################
+
+[33m## Alle Systeminfos (Kernel, CPU, Plattform, etc.) ausgeben:
+[31m uname [0m-a
+
+[33m## Kernel-Version ausgeben:
+[31m uname [0m-v
+
+[33m## Kernel-Name und -Release-Nummer ausgeben:
+[31m uname [0m-sr
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            users                      ##
+###########################################
+
+[33m## Aktuell angemeldete Nutzer anzeigen:
+[31m users [0m
+
+[33m## Aktuell angemeldete Nutzer anzeigen - mit Standardoption ausgeschrieben:
+[31m users [0m/var/run/utmp
+
+[33m## Alternative Datei nutzen (kleine Unterschiede im Format):
+[31m users [0m/var/log/wtmp
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/who
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            who                        ##
+###########################################
+
+[33m## Aktuell angemeldete Nutzer anzeigen:
+[31m who [0m
+
+[33m## Aktuell angemeldete Nutzer anzeigen - Standardoption ausgeschrieben:
+[31m who [0m/var/run/utmp
+
+[33m## Aktuell angemeldete Nutzer anzeigen, alle TTYs separat:
+[31m who [0m/var/log/wtmp
+
+[33m## Nutzer sammt aller verfügbaren Informationen (a) anzeigen:
+[31m who [0m-a
+
+[33m## Alles auslesen, was geht, plus Überschriften (H): 
+[31m who [0m-Ha /var/log/wtm
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/users
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            whoami                     ##
+###########################################
+
+[33m## Nutzername der aktuellen Nutzer-ID anzeigen:
+[31m whoami [0m
+
+[33m## Identische Ausgabe mit id erzeugen:
+[31m id [0m-un
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/who
+[31m curl [0mcli.help/users
+[31m curl [0mcli.help/id
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            yes                        ##
+###########################################
+
+[33m## Für immer y ausgeben:
+[31m yes [0m
+
+[33m## Fragen einer Installation automatisch bejahen:
+[0mapt-get install foobar |[31m yes [0m
+
+[33m## Für immer "Is auch wichtig" ausgeben:
+[31m yes [0m"Is auch wichtig"
+
+[33m## Interaktives Wortwiederholungsspaßprogramm:
+[0mread -p "Was soll endlos wiederholt werden? --> " naklar &&[31m yes [0m$naklar
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            cat                        ##
+###########################################
+
+[33m## datei.txt im Terminal (stdout) ausgeben:
+[31m cat [0mdatei.txt
+
+[33m## datei.txt, Standardeingabe, datei2.txt ausgeben:
+[31m cat [0mdatei.txt - datei2.txt
+
+[33m## cat auf die typische Art missbrauchen (statt grep suchwort datei.txt):
+[31m cat [0mdatei.txt | grep suchwort
+
+[33m## Nicht druckbare Zeichen (v), Tabs (T) und Zeilenenden kennzeichnen:
+[31m cat [0m-vET datei.txt
+
+[33m## Nicht druckbare Zeichen, Tabs und Zeilenenden kennzeichnen - kurz (a):
+[31m cat [0m-a datei.txt
+
+[33m## Alle .txt-Dateien nach datei-backup.dat schreiben:
+[31m cat [0m~/*.txt > datei-backup.dat
+
+[33m## Mehrere Listen zusammenführen, sortieren, Dubletten entfernen:
+[31m cat [0mliste1.txt liste2.txt liste3.txt | sort -u
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            cksum                      ##
+###########################################
+
+[33m## CRC-Checksumme von datei.txt erstellen und Bytes zählen
+[31m cksum [0mdatei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/sha1sum
+[31m curl [0mcli.help/sum
+[31m curl [0mcli.help/md5sum
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            comm                       ##
+###########################################
+
+[33m## datei1 und datei2 Zeile für Zeile vergleichen und dreispaltig
+ausgeben: Nur in datei1, nur in datei2, in beiden Dateien:
+[31m comm [0mdatei1 datei2
+
+[33m## Nur Gemeinsame Zeilen ausgeben:
+[31m comm [0m-12 datei1 datei2
+
+[33m## Inhalte vor dem Vergleichen sortieren:
+[31m comm [0m<(sort datei1) <(sort datei2)
+
+[33m## Inhalte von zwei Verzeichnissen vergleichen, nur Unterschiede ausgeben:
+[31m comm [0m-3 <(ls ordner1/) <(ls ordner2/)
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/sort
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            csplit                     ##
+###########################################
+
+[33m## Aus datei.txt ZWEI Dateien erstellen: xx00 mit Zeilen 1-3 und xx01 mit den
+restlichen Zeilen:
+[31m csplit [0mdatei.txt 4
+
+[33m## Aus datei.txt DREI Dateien erstellen: xx00 mit Zeilen 1-3 und xx01 mit den
+Zeilen 4-10 und xx02 mit restlichen Zeilen:
+[31m csplit [0mdatei.txt 4 11
+
+[33m## Datei alle 5 Zeilen aufteilen, Nicht-Teilbarkeit des Rests ignorieren und
+Dateien behalten (-k):
+[31m csplit [0m-k datei.txt 5 {*}
+
+[33m## Namensliste in zwei Dateien (xx00, xx01) aufteilen, liste.txt bei "Mueller"
+(die Muellers landen in xx01) trennen:
+[31m csplit [0mliste.txt /Mueller/
+
+[33m## Namensliste bei Mueller teilen und Dateien namen_1.txt und namen_2.txt erstellen:
+[31m csplit [0m--prefix=namen_ --suffix-format=%01d.txt liste.txt /Mueller/
+
+[33m## Liste bei jeder Instanz von "Montag" in einer Zeile aufsplitten:
+[31m csplit [0m-k datei.txt /Montag/ {*}
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/split
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            cut                        ##
+###########################################
+
+[33m## Zeichen (-c) 2-4 jeder Zeile aus datei.txt ausgeben:
+[31m cut [0m-c 2-4 < datei.txt
+
+[33m## Zeilen AB Zeichen 5 ausgeben ausgeben:
+[31m cut [0m-c 5- < datei.txt
+
+[33m## Zeilen BIS Zeichen 5 ausgeben ausgeben:
+[31m cut [0m-c -5 < datei.txt
+
+[33m## Spalten (-f) 2 und 4 ausgeben, Spaltenseparator ist Leerzeichen (-d" "):
+[31m cut [0m-d" " -f2,4 liste.csv
+
+[33m## Vor jede Zeile von url-liste.csv http:// schreiben (mit nl), dann
+7-stellige Zeilennummerierung (0000001, 0000002, ...) entfernen:
+[0m nl -s "http://" url-liste.csv |[31m cut [0m-c7-
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/split
+[31m curl [0mcli.help/csplit
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            expand                     ##
+###########################################
+
+[33m## Tabs in datei.txt durch 8 Leerzeichen ersetzen:
+[31m expand [0mdatei.txt
+
+[33m## Tabs in datei.txt durch 4 Leerzeichen ersetzen:
+[31m expand [m0-t4 datei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/tr
+[31m curl [0mcli.help/sed
+[31m curl [0mcli.help/unexpand
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            fmt                        ##
+###########################################
+
+[33m## Absätze in datei.txt auf 80 Zeichen Breite (auf ganze Wörter) formatieren:
+[31m fmt [0m-80 datei.txt
+
+[33m## Text in Wortliste verwandeln:
+[31m fmt [0m-0 datei.txt
+
+[33m## Zeilen, die mit "### Comment" anfangen auf 20 Zeichen Breite
+formatieren und jeder Zeile "### Comment" voranstellen:
+[31m fmt [0m-20 -p"### Comment" datei.txt
+
+[33m## Zeilen wie "Zutat: Zucker" und "Zutat: Salz" zu einer Zeile in der Art
+"Zutat: Zucker Salz" zusammenfassen - fast derselbe Befehl wie oben!
+[31m fmt [0m-pZutat: rezept.txt
+
+[33m## Nur lange Zeilen umbrechen, kurze nicht zusammenfassen:
+[31m fmt [0m-s -20 -p"### Comment" datei.txt
+
+[33m## Text in Wortliste verwandeln:
+[31m fmt [0m-0 datei.txt
+
+[33m## Zeilen 2-n jedes Absatzes um drei Leerzeichen einrücken:
+[31m fmt [0m-t datei.txt
+
+[33m## Auf 20 Zeichen Breite formatieren (-g), aber bis zu 30 zulassen
+(für lange Wörter etwa):
+[31m fmt [0m-30 -g20 datei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/join
+[31m curl [0mcli.help/fold
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            fold                       ##
+###########################################
+
+[33m## Zeilen von datei.txt auf exakt 20 Zeichen Breite formatieren:
+[31m fold [0m-w20 datei.txt
+
+[33m## Wie oben, aber möglichst bei Leerzeichen umbrechen, nicht mitten im Wort:
+[31m fold [0m-s -w20 datei.txt
+
+[33m## Aus datei.txt eine Buchstabenliste machen - warum auch immer ...
+[31m fold [0m-w1 datei.txt
+
+[33m## ... na zum Beispiel, um Häufigkeiten von Zeichen auszuwerten:
+[31m fold [0m-w1 datei.txt | sort | uniq -c | sort -n
+
+[33m## Wie oben, aber mit Zeilenlänge in Byte statt Zeichen:
+[31m fold [0m-b1 datei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/join
+[31m curl [0mcli.help/fmt
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            head                       ##
+###########################################
+
+[33m## Erste 10 Zeilen von datei.txt ausgeben:
+[31m head [0m~/Dokumente/datei.txt
+
+[33m## Erste 2 Zeilen von datei.txt ausgeben:
+[31m head [0m-n2 ~/Dokumente/datei.txt
+
+[33m## Erste 5 Byte von jeder txt-Datei im Ordner anzeigen:
+[31m head [0m-c5 ~/Dokumente/*.txt
+
+[33m## Wie oben, aber ohne Angabe der Dateinamen in der Ausgabe:
+[31m head [0m-q -c5 ~/Dokumente/*.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/tail
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            join                       ##
+###########################################
+
+[33m## Liste mit Zeilen nach Muster "Personalnummer: Name" und Liste "Personalnummer: Aufgabe"
+als neue Liste "Personalnummer: Name Aufgabe" ausgeben:
+[31m join [0mnamen.csv aufgaben.csv
+
+[33m## Wie oben, aber bei unterschiedlicher Sortierung der Listen:
+[31m join [0mnamen.csv <(sort aufgaben.csv)
+
+[33m## Liste "Name ID Aufgabe" mit Liste "Hobby Alter ID" über das Feld ID verschmelzen:
+[31m join [0m-1 2 -2 3 liste1.csv liste2.csv
+
+[33m## Output-Format festlegen auf Spalte/Feld 1 und 3 von liste1.csv und Feld 6 von liste2.csv:
+[31m join [0m-o 1.1 1.3 2.6 liste1.csv liste2.csv
+
+[33m## Liste "Name ID Aufgabe" mit Liste "Hobby Alter ID" über ID verschmelzen, aber nur
+"Aufgabe Alter" ausgeben:
+[31m join [0m-1 2 -2 3 -o 1.3 2.2 liste1.csv liste2.csv
+
+[33m## Listen mit Komma als Trenner (statt Leerzeichen) verschmelzen:
+[31m join [0m-t, liste1.csv liste2.csv
+
+[33m## Liste 1 über Feld 2 (-1 2) mit Liste 2 über Feld 5 (-2 5) verschmelzen, ; als Separator (t),
+Groß-/Kleinschreibung ignorieren (i), nicht vorhandene Felder mit LEER auffüllen (e) und Liste 2
+nach dem 3. Zeichen der zweiten Spalte sortieren, dabei Leerzeichen ignorieren:
+[31m join [0m-i -e -t";" -1 2 -2 5 liste1.csv <(sort -k 2.2b liste2.csv)
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/join
+[31m curl [0mcli.help/cut
+[31m curl [0mcli.help/paste
+[31m curl [0mcli.help/sort
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            md5sum                     ##
+###########################################
+
+[33m## md5-Checksumme von datei.txt ausgeben:
+[31m md5sum [0mdatei.txt
+
+[33m## md5-Checksumme jeder Datei in summen.txt speichern:
+[31m md5sum [0m~/meinordner/* > summen.txt
+
+[33m## Prüfen, ob Checksummen in summen.txt den Checksummen der Dateien entsprechen:
+[31m md5sum [0m-c summen.txt
+
+[33m## md5-Checksummen prüfen, aber nur Fälle falscher Summen ausgeben:
+[31m md5sum [0m-c --ignore-missing --quiet summen.txt
+
+[33m## Dateien von orig nach ziel kopieren und auf Integrität testen:
+[0mcd orig/ && [31mmd5sum[0m * > ../ziel/summen.txt && cp * ../ziel/ && cd ../ziel && [31mmd5sum[0m --quiet -c summen.txt && cd ..
+[33mDer Wechsel in die Verzeichnisse ist notwendig, da md5sum ansonsten die Pfade der Dateien mit
+in die summen.txt übernimmt - was beim Prüfen natürlich zu Fehlern führt.
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/sha1sum
+[31m curl [0mcli.help/sum
+[31m curl [0mcli.help/cksum
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            nl                         ##
+###########################################
+
+[33m## datei.txt ausgeben und vor jede Zeile Zahl (sechstellig) und TAB voranstellen:
+[31m nl [0mdatei.txt
+
+[33m## Wie oben, aber vierstellige Zahl und : statt TAB:
+[31m nl [0m-w4 -s: datei.txt
+
+[33m## Wie oben, aber mit anführenden Nullen:
+[31m nl [0m-w4 -s: -nrz datei.txt
+
+[33m## Nur Zeilen nummerieren, die "Montag" oder "Sonntag" enthalten:
+[31m nl [0m-b p'\(Montag\|Sonntag\)' datei.txt
+
+[33m## Ordnerinhalt durchnummerieren:
+[31m nl [0m<(ls ~/ordner)
+
+[33m## Wie oben, aber Nummerierung wieder ausschneiden und somit reine Dateinamenliste erstellen:
+[31m nl [0m<(ls ~/ordner) | cut -c7-
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/cut
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            od                         ##
+###########################################
+
+[33m## "Hallo Welt" als octale Repräsentation ausgeben:
+[31m od [0m<(echo "Hallo Welt")
+
+[33m## "Hallo Welt" als hexadezimale Repräsentation ausgeben:
+[31m od [0m-x <(echo "Hallo Welt")
+
+[33m## Falls jemand praktische Anwendungsfälle für od hat - immer her damit![0m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            paste                      ##
+###########################################
+
+[33m## Zeilen von datei1 und datei2 paarweise hintereinander ausgeben, getrennt durch Leerzeichen:
+[31m paste [0mdatei1 datei2
+
+[33m## Buchstabenliste (a-c) und Zahlenliste (1-3) in Zeilen "a,1", "b,2" und "c,3" ausgeben:
+[31m paste [0m-d, buchstaben.txt zahlen.txt
+
+[33m## Zeilen von datei1 hintereinander ausgeben, getrennt durch Komma:
+[31m paste [0m-s -d, datei1
+
+[33m## Listen 1.csv bis 5.csv zu kommaseparierter Datei zusammenfügen:
+[31m paste [0m-d, [1-5].csv
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/join
+[31m curl [0mcli.help/cut
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            pr                         ##
+###########################################
+
+[33m## Text in 66 Zeilen lange Seiten einteilen und Seiten mit
+Datum, Nummer und Titel (Dateiname) erstellen:
+[31m pr [0mdatei.txt
+
+[33m## Mehrere Dateien auf 50 Zeilen lange Seiten verteilen:
+[31m pr [0m-l50 kapitel1.txt kapitel2.txt kapitel3.txt
+
+[33m## Alle txt-Dateien dreispaltig ausgeben und Titel "Mein Titel" setzen:
+[31m pr [0m-3 -h"Mein Titel" ~/texte/*.txt
+
+[33m## Nur Seiten 6-8 ausgeben:
+[31m pr [0m+6:8 datei.txt
+
+[33m## Drei Texte als drei Spalten nebeneinander und auf Seiten verteilt:
+[31m pr [0m-m peters-kolumne.txt ingas-kolumne.txt djangos-kolumne.txt
+
+[33m## Beispiel für recht rundes Druckbild: 2-spaltig, doppelter Zeilenvorschub (d),
+40 Zeilen langen Seiten, 100 Zeichen breiten Seiten und 9 Leerzeichen als Spaltentrenner:
+[31m pr [0m pr -l40 -W100 -h"Meine Zeitschrift" -S"         " -2 -d
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/fmt
+[31m curl [0mcli.help/fold
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            ptx                        ##
+###########################################
+
+[33m## Permutierten Index von liste.txt ausgeben:
+[31m ptx [0mliste.txt
+
+[33m## Ja, nicht sehr hilfreich ... Idee? Her damit! ;)[0m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sha1sum                    ##
+###########################################
+
+[33m## sha1-Checksumme von datei.txt ausgeben:
+[31m sha1sum [0mdatei.txt
+
+[33m## sha1-Checksumme jeder Datei in summen.txt speichern:
+[31m sha1sum [0m~/meinordner/* > summen.txt
+
+[33m## Prüfen, ob Checksummen in summen.txt den Checksummen der Dateien entsprechen:
+[31m sha1sum [0m-c summen.txt
+
+[33m## sha1-Checksummen prüfen, aber nur Fälle falscher Summen ausgeben:
+[31m sha1sum [0m-c --ignore-missing --quiet summen.txt
+
+[33m## Dateien von orig nach ziel kopieren und auf Integrität testen:
+[0mcd orig/ && [31msha1sum[0m * > ../ziel/summen.txt && cp * ../ziel/ && cd ../ziel && [31msha1sum[0m --quiet -c summen.txt && cd ..
+[33mDer Wechsel in die Verzeichnisse ist notwendig, da sha1sum ansonsten die Pfade der Dateien mit
+in die summen.txt übernimmt - was beim Prüfen natürlich zu Fehlern führt.
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/md5sum
+[31m curl [0mcli.help/sum
+[31m curl [0mcli.help/cksum
+
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sort                       ##
+###########################################
+
+[33m## Dateiinhalt alphabetisch nach erstem Zeichen sortieren:
+[31m sort [0mdatei.txt
+
+[33m## Sortieren einer kommaseparierten Datei nach Spalte/Feld 3:
+[31m sort [0m-t',' -k3 liste.csv
+
+[33m## Führende Leerzeichen (b) und sonstige nicht druckbare Zeichen (i) ignorieren:
+[31m sort [0m-b -i datei.txt
+
+[33m## Mehrere Listen nach 3. Zeichen der 2. Spalte sortieren, doppelte Zeilen nur einmalig ausgeben (u):
+[31m sort [0m-b -i -t',' -k2.3
+
+[33m## Worthäufigkeiten zählen: Sortieren, dann Vorkommen zählen, dann nach Zahlen sortieren:
+[0mcat wortlisten_*.txt |[31m sort[0m | uniq -c | [31msort [0m-n
+
+[33m## Wie zuvor, aber ohne cat abuse:
+[31msort [0m<(uniq -c <([31msort[0m -n wortlisten_*.txt))
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/uniq
+[31m curl [0mcli.help/cut
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            split                      ##
+###########################################
+
+[33m## datei.txt alle drei Zeilen (-l3) aufsplitten und
+Dateien mit Präfix x und fortlaufendem Suffix aa erstellen (xaa, xab etc.):
+[31m split [0m-l3 datei.txt
+
+[33m## Wie oben, aber mit Präfix foobar und Suffix aus drei (-a3) Ziffern (-d):
+[31m split [0m-l3 -a3 -d datei.txt foobar
+
+[33m## datei.txt in 10 Teile splitten, nicht in Zeilen splitten (l):
+[31m split [0m--numbers=l/10 datei.txt
+
+[33m## 6. von 10 Teilen im Terminal ausgeben, keine Dateien erstellen:
+[31m split [0m-nl/6/10 datei.txt
+
+[33m## Videodatei film.avi in 5 Teile (xaa-xae) splitten; dann wieder in film2.avi
+zusammenführen:
+[31m split [0m-n5 ~/ordner/film.avi
+[31m cat [0m~/ordner/x* > film2.avi
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/cat
+[31m curl [0mcli.help/csplit
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sum                        ##
+###########################################
+
+[33m## Checksumme und Blockanzahl von datei.txt ausgeben:
+[31m sum [0mdatei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/sha1sum
+[31m curl [0mcli.help/cksum
+[31m curl [0mcli.help/md5sum
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            tac                        ##
+###########################################
+
+[33m## Datei zeilenweise ausgeben - wie cat -, aber rückwärts:
+[31m tac [0mdatei.txt
+
+[33m## Verwirrende Ergebnisse mit einem Wort (foobar) aus dem Text in datei.txt herzaubern:
+[31m tac [0m-brs'foobar' datei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/cat
+[31m curl [0mcli.help/sort
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            tail                       ##
+###########################################
+
+[33m## Letzte 10 Zeilen von datei.txt ausgeben:
+[31m tail [0m~/datei.txt
+
+[33m## Datei überwachen, Änderungen live ausgeben:
+[31m tail [0m-f logdatei.text
+
+[33m## Wie oben, aber DateiNAMEN überwachen:
+[31m tail [0m--follow=logdatei.text
+
+[33m## Zeilen ab 22. Zeile ausgeben:
+[31m tail [0m-n +22 datei.txt
+
+[33m## Die ersten und letzen beiden Zeilen löschen:
+[31m tail [0m-n +3 datei.txt | head -n -2
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/head
+[31m curl [0mcli.help/cat
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            tr                         ##
+###########################################
+
+[33m## Den Buchstaben X in datei.txt durch U ersetzen:
+[31m tr [0mX U <datei.txt
+
+[33m## Aus Maus Haut machen:
+[0m echo Maus |[31m tr [0mMs Ht
+
+[33m## Alle Groß- durch Kleinbuchstaben ersetzen:
+[31m tr [0mA-Z a-z <datei.txt
+
+[33m## Wie zuvor:
+[31m tr [0m[:upper:] [:lower:] <datei.txt
+
+[33m## Tabulatoren durch Unterstriche ersetzen:
+[31m tr [0m'\t' '_' <datei.txt
+
+[33m## Windows-Umbrüche löschen:
+[31m tr [0m-d'\n' <datei.txt
+
+[33m## Alle Satzzeichen und Tabulatoren löschen:
+[31m tr [0m-d '[:punct:]\t' <datei.txt
+
+[33m## Doppelte Leerzeichen und Umbrüche entfernen:
+[31m tr [0m-s ' \n' <datei.txt
+
+[33m## Simple Verschlüsselung - 1: Verschlüsseln durch Buchstabentausch:
+[31m tr [0ma-z n-za-m <input.txt > verschlüsselt.txt
+
+[33m## Simple Verschlüsselung - 2: Entschlüsseln:
+[31m tr [0mn-za-m a-z <input.txt > entschlüsselt.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/sed
+[31m curl [0mcli.help/awk
+[31m curl [0mcli.help/regex
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            tsort                      ##
+###########################################
+
+[33m## Topologische Sortierung von datei.txt:
+[31m tsort [0mdatei.txt
+
+[33m## Nicht hilfreich, ich weiß ... Wer eine praktische
+Anwendung als Beispiel hat: Her damit!
+[31m curl [0mcli.help/kontakt
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            unexpand                   ##
+###########################################
+
+[33m## Leerzeichen in datei.txt durch Tabs ersetzen:
+[31m unexpand [0m-a datei.txt
+
+[33m## Leerzeichen durch 10 Zeichen breite Tabs ersetzen:
+[31m unexpand [0m-t20 datei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/tr
+[31m curl [0mcli.help/sed
+[31m curl [0mcli.help/expand
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            uniq                       ##
+###########################################
+
+[33m## Doppelte, aufeinanderfolgende Zeilen nur einmal ausgeben: 
+[31m uniq [0mliste.txt
+
+[33m## Zeilen erst sortieren, dann doppelte Zeile nur einmal ausgeben:
+[31m uniq [0m<(sort liste.txt)
+
+[33m## Nur doppelte Zeilen mehrerer Dateien ausgeben:
+[31m uniq [0m-u <(sort listen*.txt)
+
+[33m## Nur doppelte Zeilen mehrerer Dateien ausgeben - besser mit sort:
+[31m sort [0m-u listen*.txt
+
+[33m## Worthäufigkeiten zählen: Sortieren, dann Vorkommen zählen, dann nach Zahlen sortieren:
+[0m cat wortlisten_*.txt | sort |[31m uniq[0m -c | sort -n
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/sort
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            wc                         ##
+###########################################
+
+[33m## Anzahl Zeilen, Wörter, Bytes, Dateiname von datei.txt ausgeben:
+[31m wc [0mdatei.txt
+
+[33m## Alle txt-Dateien samt Anzahl der Wörter auflisten:
+[31m wc [0m-w ~/ordner/*.txt
+
+[33m## Top Ten der wortreichsten txt-Dateien erstellen:
+[31m wc [0m-w ~/ordner/*.txt | sort | tac | head -10
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/sort
+[31m curl [0mcli.help/tac
+[31m curl [0mcli.help/head

@@ -1,0 +1,51 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            join                       ##
+###########################################
+
+[33m## Liste mit Zeilen nach Muster "Personalnummer: Name" und Liste "Personalnummer: Aufgabe"
+als neue Liste "Personalnummer: Name Aufgabe" ausgeben:
+[31m join [0mnamen.csv aufgaben.csv
+
+[33m## Wie oben, aber bei unterschiedlicher Sortierung der Listen:
+[31m join [0mnamen.csv <(sort aufgaben.csv)
+
+[33m## Liste "Name ID Aufgabe" mit Liste "Hobby Alter ID" über das Feld ID verschmelzen:
+[31m join [0m-1 2 -2 3 liste1.csv liste2.csv
+
+[33m## Output-Format festlegen auf Spalte/Feld 1 und 3 von liste1.csv und Feld 6 von liste2.csv:
+[31m join [0m-o 1.1 1.3 2.6 liste1.csv liste2.csv
+
+[33m## Liste "Name ID Aufgabe" mit Liste "Hobby Alter ID" über ID verschmelzen, aber nur
+"Aufgabe Alter" ausgeben:
+[31m join [0m-1 2 -2 3 -o 1.3 2.2 liste1.csv liste2.csv
+
+[33m## Listen mit Komma als Trenner (statt Leerzeichen) verschmelzen:
+[31m join [0m-t, liste1.csv liste2.csv
+
+[33m## Liste 1 über Feld 2 (-1 2) mit Liste 2 über Feld 5 (-2 5) verschmelzen, ; als Separator (t),
+Groß-/Kleinschreibung ignorieren (i), nicht vorhandene Felder mit LEER auffüllen (e) und Liste 2
+nach dem 3. Zeichen der zweiten Spalte sortieren, dabei Leerzeichen ignorieren:
+[31m join [0m-i -e -t";" -1 2 -2 5 liste1.csv <(sort -k 2.2b liste2.csv)
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/join
+[31m curl [0mcli.help/cut
+[31m curl [0mcli.help/paste
+[31m curl [0mcli.help/sort

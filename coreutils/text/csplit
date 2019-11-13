@@ -1,0 +1,45 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            csplit                     ##
+###########################################
+
+[33m## Aus datei.txt ZWEI Dateien erstellen: xx00 mit Zeilen 1-3 und xx01 mit den
+restlichen Zeilen:
+[31m csplit [0mdatei.txt 4
+
+[33m## Aus datei.txt DREI Dateien erstellen: xx00 mit Zeilen 1-3 und xx01 mit den
+Zeilen 4-10 und xx02 mit restlichen Zeilen:
+[31m csplit [0mdatei.txt 4 11
+
+[33m## Datei alle 5 Zeilen aufteilen, Nicht-Teilbarkeit des Rests ignorieren und
+Dateien behalten (-k):
+[31m csplit [0m-k datei.txt 5 {*}
+
+[33m## Namensliste in zwei Dateien (xx00, xx01) aufteilen, liste.txt bei "Mueller"
+(die Muellers landen in xx01) trennen:
+[31m csplit [0mliste.txt /Mueller/
+
+[33m## Namensliste bei Mueller teilen und Dateien namen_1.txt und namen_2.txt erstellen:
+[31m csplit [0m--prefix=namen_ --suffix-format=%01d.txt liste.txt /Mueller/
+
+[33m## Liste bei jeder Instanz von "Montag" in einer Zeile aufsplitten:
+[31m csplit [0m-k datei.txt /Montag/ {*}
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/split

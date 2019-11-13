@@ -1,0 +1,52 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            dd                         ##
+###########################################
+
+[33m## Abbild von Partition als Image mit Statusanzeige:
+[31mdd [0m-if=/dev/sda1 of=/home/peter/mein-sda1-image status=progress
+
+[33m## Datenträger mit zufällingen Zeichen überschreiben:
+[31mdd [0m-if=/dev/urandom of=/dev/sda
+
+[33m## 5 mal 1 MB große zufällige Blöcke als 5-MB-Datei schreiben:
+[31mdd [0m-if=/dev/urandom of=~/meine-datei bs=1M count=5
+
+[33m## Festplatte sda auf sdb klonen:
+[31mdd [0m-if=/dev/sda of=/dev/sdb
+
+[33m## Partition als komprimiertes Image speichern:
+[31mdd [0m-if=/dev/sda1 | [31mgzip [0m> ~/mein-komprimiertes-image.img.gz
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Image mounten:
+[31msudo mount [0m-o loop ~/mein-image.img /media/mein-mount-point
+
+[33m## Geräteeigenschaften auflisten:
+[31msudo blkid [0m
+
+[33m## Dateisystem auf Partitionsgröße ausdehnen:
+[31msudo resize2fs [0m/dev/sdb1
+
+[33m## UUID neu setzen:
+[31msudo tune2fs [0m-U random /dev/sdb1
+
+[33m## Label neu setzen:
+[31msudo e2label [0m/dev/sdb1 neuername[31m

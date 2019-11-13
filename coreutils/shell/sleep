@@ -1,0 +1,32 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sleep                      ##
+###########################################
+
+[33m## 5 Sekunden nichts tun:
+[31m sleep [0m5
+
+[33m## 5 Minuten nichts tun:
+[31m sleep [0m5m
+
+[33m## 5 Tage und 3 Stunden nichts tun:
+[31m sleep [0m5d 3h
+
+[33m## Typische Nutzung von sleep in Schleife:
+[0mwhile true; do ping -c1 example.com && [31msleep[0m 10; done

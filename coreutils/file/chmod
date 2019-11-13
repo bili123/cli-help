@@ -1,0 +1,57 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            chmod                      ##
+###########################################
+
+[33m## Gruppe Schreibrechte für Datei hinzufügen:
+[31m chmod [0mg+w ~/meine-datei
+
+[33m## Anderen (Others) Leserechte entziehen:
+[31m chmod [0mo-r ~/meine-datei
+
+[33m## Rechte für einen Ordner rekursiv auf 755 setzen:
+[31m chmod [0m-R 755 ~/mein-ordner/
+
+[33m## Alle Rechte für User, Gruppe, Others neu setzen:
+[31m chmod [0mu=rwx,g=rx,o=r ~/meine-datei
+
+[92mIn diesem Zusammenhang hilfreich:
+
+[33m## Aktuelle Rechte einer Datei anzeigen:
+[31m ls [0m-l ~/meine-datei
+
+[33m## Hilfe zu groups:
+[31m curl [0m-s cli.help/groups
+
+[33m## Besitzer ändern:
+[31m curl [0m-s cli.help/chown
+
+[33m## Grupppen ändern:
+[31m curl [0m--s cli.help/chgrp
+
+[33m## Rechte-Notationen - je für Besitzer, Gruppe, andere:
+[31mOktal   Binär   Symbol   Menschlich[0m
+0       000              nichts
+1       001     x        ausführen
+2       010     w        schreiben
+3       011     rw       schreiben, lesen 
+4       100     r        lesen
+5       101     rx       lesen, ausführen
+6       110     rw       lesen, schreiben 
+7       111     rwx      lesen, schreiben, ausführen[31m

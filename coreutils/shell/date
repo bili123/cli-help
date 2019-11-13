@@ -1,0 +1,43 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            date                       ##
+###########################################
+
+[33m## Datum wie "Sonntag,20.10.2019" ausgeben:
+[31m date [0m+%A,%d.%m.%Y
+
+[33m## Sekunden seit 1.1.1970 (aka Unixzeit):
+[31m date [0m+%s
+
+[33m## Datum der letzten Änderung an Datei:
+[31m date [0m--reference=~/meinedatei.txt
+
+[33m## Kalenderwoche (ISO) ausgeben:
+[31m date [0m+%V
+
+[33m## Datum in New York ausgeben:
+[31m TZ[0m=America/New_York date
+
+[33m## Datum hier, wenn in New York 10.00 Uhr:
+[31m date [0m--date='"TZ=America/New_York" 10:00'
+
+[33m## In diesem Zusammenhang auch interessant:
+
+[33m## Zeitzone interaktiv bestimmen:
+[31m tzselect [31m

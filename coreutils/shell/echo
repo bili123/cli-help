@@ -1,0 +1,38 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            echo                       ##
+###########################################
+
+[33m## Hallo Welt schreiben ;)
+[31m echo [0mHallo Welt
+
+[33m## Keinen Zeilenumbruch anfügen:
+[31m echo [0m-n Hallo Welt
+
+[33m## Hallo und Welt in je eine Zeile schreiben:
+[31m echo [0m-e "Hallo\nWelt"
+
+[33m## Hallo Welt in eine Datei schreiben:
+[31m echo [0mHallo Welt > ~/datei.txt
+
+[33m## Hallo Welt an eine Datei anhängen:
+[31m echo [0mHallo Welt >> ~/datei.txt
+
+[33m## Text plus Befehlsausgabe ausgeben:
+[31m echo [0m"Verzeichnisinhalt: $(ls)" [31m

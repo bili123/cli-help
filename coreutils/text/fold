@@ -1,0 +1,39 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            fold                       ##
+###########################################
+
+[33m## Zeilen von datei.txt auf exakt 20 Zeichen Breite formatieren:
+[31m fold [0m-w20 datei.txt
+
+[33m## Wie oben, aber möglichst bei Leerzeichen umbrechen, nicht mitten im Wort:
+[31m fold [0m-s -w20 datei.txt
+
+[33m## Aus datei.txt eine Buchstabenliste machen - warum auch immer ...
+[31m fold [0m-w1 datei.txt
+
+[33m## ... na zum Beispiel, um Häufigkeiten von Zeichen auszuwerten:
+[31m fold [0m-w1 datei.txt | sort | uniq -c | sort -n
+
+[33m## Wie oben, aber mit Zeilenlänge in Byte statt Zeichen:
+[31m fold [0m-b1 datei.txt
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/join
+[31m curl [0mcli.help/fmt

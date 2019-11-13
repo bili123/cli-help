@@ -1,0 +1,31 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            factor                     ##
+###########################################
+
+[33m## Faktoren von 9 ausgeben (also 3 ...):
+[31m factor [0m9
+
+[33m## Ganze Zahlen ab 1 per Endlosschleife faktorisieren:
+[0mn=1
+while true; do [31mfactor[0m $n && ((n++)); done
+
+[33m## Alle Primzahlen bis 100 ausgeben:
+[0mn=1
+while [ $n -le 100 ]; do [31mfactor[0m $n | awk '{if ($3=="") print $2}' && ((n++)); done

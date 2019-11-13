@@ -1,0 +1,42 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sort                       ##
+###########################################
+
+[33m## Dateiinhalt alphabetisch nach erstem Zeichen sortieren:
+[31m sort [0mdatei.txt
+
+[33m## Sortieren einer kommaseparierten Datei nach Spalte/Feld 3:
+[31m sort [0m-t',' -k3 liste.csv
+
+[33m## Führende Leerzeichen (b) und sonstige nicht druckbare Zeichen (i) ignorieren:
+[31m sort [0m-b -i datei.txt
+
+[33m## Mehrere Listen nach 3. Zeichen der 2. Spalte sortieren, doppelte Zeilen nur einmalig ausgeben (u):
+[31m sort [0m-b -i -t',' -k2.3
+
+[33m## Worthäufigkeiten zählen: Sortieren, dann Vorkommen zählen, dann nach Zahlen sortieren:
+[0mcat wortlisten_*.txt |[31m sort[0m | uniq -c | [31msort [0m-n
+
+[33m## Wie zuvor, aber ohne cat abuse:
+[31msort [0m<(uniq -c <([31msort[0m -n wortlisten_*.txt))
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/uniq
+[31m curl [0mcli.help/cut

@@ -1,0 +1,29 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            dircolors                  ##
+###########################################
+
+[33m## 1. Datei für ls-Farbdefinitionen erstellen:
+[31m dircolors [0m-p > ~/.dircolors 
+
+[33m## 2. Datei für ls-Farbdefinitionen bearbeiten:
+[31m nano [0m~/.dircolors 
+
+[33m## 3. Farbdefinitionen per Umgebungsvariable laden:
+[31m eval [0m"$(dircolors -b ~/.dircolors)" [31m

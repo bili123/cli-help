@@ -1,0 +1,41 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            cat                        ##
+###########################################
+
+[33m## datei.txt im Terminal (stdout) ausgeben:
+[31m cat [0mdatei.txt
+
+[33m## datei.txt, Standardeingabe, datei2.txt ausgeben:
+[31m cat [0mdatei.txt - datei2.txt
+
+[33m## cat auf die typische Art missbrauchen (statt grep suchwort datei.txt):
+[31m cat [0mdatei.txt | grep suchwort
+
+[33m## Nicht druckbare Zeichen (v), Tabs (T) und Zeilenenden kennzeichnen:
+[31m cat [0m-vET datei.txt
+
+[33m## Nicht druckbare Zeichen, Tabs und Zeilenenden kennzeichnen - kurz (a):
+[31m cat [0m-a datei.txt
+
+[33m## Alle .txt-Dateien nach datei-backup.dat schreiben:
+[31m cat [0m~/*.txt > datei-backup.dat
+
+[33m## Mehrere Listen zusammenführen, sortieren, Dubletten entfernen:
+[31m cat [0mliste1.txt liste2.txt liste3.txt | sort -u

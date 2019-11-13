@@ -1,0 +1,36 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            paste                      ##
+###########################################
+
+[33m## Zeilen von datei1 und datei2 paarweise hintereinander ausgeben, getrennt durch Leerzeichen:
+[31m paste [0mdatei1 datei2
+
+[33m## Buchstabenliste (a-c) und Zahlenliste (1-3) in Zeilen "a,1", "b,2" und "c,3" ausgeben:
+[31m paste [0m-d, buchstaben.txt zahlen.txt
+
+[33m## Zeilen von datei1 hintereinander ausgeben, getrennt durch Komma:
+[31m paste [0m-s -d, datei1
+
+[33m## Listen 1.csv bis 5.csv zu kommaseparierter Datei zusammenfügen:
+[31m paste [0m-d, [1-5].csv
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/join
+[31m curl [0mcli.help/cut

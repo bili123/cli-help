@@ -1,0 +1,54 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            test                       ##
+###########################################
+
+[33m## Testen, ob datei.txt existiert (Rückgabe: TRUE):
+[31m test [0mdatei.txt
+
+[33m## Testen, ob datei.txt existiert - andere Notation:
+[31m [[ [0mdatei.txt [31m]]
+
+[33m## Testen, ob Fotos existiert und ein Verzeichnis ist:
+[31m test [0m-d Fotos
+
+[33m## Testen, ob datei.txt UND foobar existieren:
+[31m test [0mdatei.txt -a foobar
+
+[33m## Testen, ob datei.txt ODER foobar existiert:
+[31m test [0mdatei.txt -o foobar
+
+[33m## test in einer if-Abfrage benutzen:
+[0mif $([31mtest[0m datei.txt); then echo "Datei gibt es."; else echo "Datei gibt es nicht"; fi
+
+[33m## test in if-Abfrage, aber mit eckigen Klammern:
+[0mif [31m[[[0m datei.txt[31m ]][0m; then echo "Datei gibt es."; else echo "Datei gibt es nicht"; fi
+
+[33m## Testen, ob 8 kleiner als 9 ist:
+[31m [[ [0m8 -lt 9 [31m]]
+
+[33m## Testen, ob der String "foobar" IRGENDWO im Text von datei.txt vorkommt: 
+[0mif [31m[[[0m $(cat datei.txt) = *foobar* [31m]][0m; then echo "Ist enthalten."; else echo "Ist nicht enthalten"; fi
+
+[33m## Testen, ob der String "foobar" AM ZEILENANFANG im Text von datei.txt vorkommt: 
+[0mif [31m[[[0m $(cat datei.txt) = foobar* [31m]][0m; then echo "Ist enthalten."; else echo "Ist nicht enthalten"; fi
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/true
+[31m curl [0mcli.help/false

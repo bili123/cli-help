@@ -1,0 +1,43 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            sha1sum                    ##
+###########################################
+
+[33m## sha1-Checksumme von datei.txt ausgeben:
+[31m sha1sum [0mdatei.txt
+
+[33m## sha1-Checksumme jeder Datei in summen.txt speichern:
+[31m sha1sum [0m~/meinordner/* > summen.txt
+
+[33m## Prüfen, ob Checksummen in summen.txt den Checksummen der Dateien entsprechen:
+[31m sha1sum [0m-c summen.txt
+
+[33m## sha1-Checksummen prüfen, aber nur Fälle falscher Summen ausgeben:
+[31m sha1sum [0m-c --ignore-missing --quiet summen.txt
+
+[33m## Dateien von orig nach ziel kopieren und auf Integrität testen:
+[0mcd orig/ && [31msha1sum[0m * > ../ziel/summen.txt && cp * ../ziel/ && cd ../ziel && [31msha1sum[0m --quiet -c summen.txt && cd ..
+[33mDer Wechsel in die Verzeichnisse ist notwendig, da sha1sum ansonsten die Pfade der Dateien mit
+in die summen.txt übernimmt - was beim Prüfen natürlich zu Fehlern führt.
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/md5sum
+[31m curl [0mcli.help/sum
+[31m curl [0mcli.help/cksum
+

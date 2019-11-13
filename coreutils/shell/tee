@@ -1,0 +1,38 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            tee                        ##
+###########################################
+
+[33m## eingabe.txt auf Standardausgabe und in ausgabe.txt ausgeben:
+[31m tee [0mausgabe.txt < eingabe.txt
+
+[33m## eingabe.txt in ausgabe.txt anhängen:
+[31m tee [0m-a ausgabe.txt < eingabe.txt
+
+[33m## eingabe.txt an alle txt-Dateien anhängen:
+[0mcat eingabe.txt | [31mtee [0m-a *.txt
+
+[33m## Dateien 1.txt - 5.txt erstellen und mit eingabe.txt füllen:
+[31m tee [0m./{1,2,3,4,5}.txt < eingabe.txt
+
+[33m## eingabe.txt an alle txt-Dateien anhängen, per Schleife:
+[0m for i in $(ls *.txt); do [31mtee [0m$i < eingabe.txt; done
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/echo
