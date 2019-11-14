@@ -1,0 +1,25 @@
+<H1>sort                       </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Dateiinhalt alphabetisch nach erstem Zeichen sortieren:<br>
+ sort datei.txt<br>
+<br>
+## Sortieren einer kommaseparierten Datei nach Spalte/Feld 3:<br>
+ sort -t',' -k3 liste.csv<br>
+<br>
+## Führende Leerzeichen (b) und sonstige nicht druckbare Zeichen (i) ignorieren:<br>
+ sort -b -i datei.txt<br>
+<br>
+## Mehrere Listen nach 3. Zeichen der 2. Spalte sortieren, doppelte Zeilen nur einmalig ausgeben (u):<br>
+ sort -b -i -t',' -k2.3<br>
+<br>
+## Worthäufigkeiten zählen: Sortieren, dann Vorkommen zählen, dann nach Zahlen sortieren:<br>
+cat wortlisten_*.txt | sort | uniq -c | sort -n<br>
+<br>
+## Wie zuvor, aber ohne cat abuse:<br>
+sort <(uniq -c <(sort -n wortlisten_*.txt))<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/uniq<br>
+ curl cli.help/cut<br>

@@ -1,0 +1,21 @@
+<H1>tee                        </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## eingabe.txt auf Standardausgabe und in ausgabe.txt ausgeben:<br>
+ tee ausgabe.txt < eingabe.txt<br>
+<br>
+## eingabe.txt in ausgabe.txt anhängen:<br>
+ tee -a ausgabe.txt < eingabe.txt<br>
+<br>
+## eingabe.txt an alle txt-Dateien anhängen:<br>
+cat eingabe.txt | tee -a *.txt<br>
+<br>
+## Dateien 1.txt - 5.txt erstellen und mit eingabe.txt füllen:<br>
+ tee ./{1,2,3,4,5}.txt < eingabe.txt<br>
+<br>
+## eingabe.txt an alle txt-Dateien anhängen, per Schleife:<br>
+ for i in $(ls *.txt); do tee $i < eingabe.txt; done<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/echo<br>

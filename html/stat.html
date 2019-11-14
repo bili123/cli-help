@@ -1,0 +1,18 @@
+<H1>stat                       </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Statusdaten von datei.txt anzeigen:<br>
+ stat ~/datei.txt<br>
+<br>
+## Nur Zugriffsrechte in Octal-Notation:<br>
+ stat --format=%a ~/datei.txt<br>
+<br>
+## Statusdaten einzeilig ausgeben:<br>
+ stat -t ~/datei.txt<br>
+<br>
+## Dateisystemstatus ausgeben:<br>
+ stat -f /dev/sda1<br>
+<br>
+## Status aller .txt-Dateien im aktuellen Verzeichnis:<br>
+for i in $(ls *.txt); do stat $i; done<br>

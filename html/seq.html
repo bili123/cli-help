@@ -1,0 +1,18 @@
+<H1>seq                        </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Zahlen von 1 bis 10 in ausgeben:<br>
+ seq 1 10<br>
+<br>
+## Zahlen von 1 bis 10 in Zweierschritten ausgeben:<br>
+ seq 1 2 10<br>
+<br>
+## Zahlen von 1 bis 10, getrennt mit Unterstrichen ausgeben:<br>
+ seq --separator=_ 1 10<br>
+<br>
+## Kleine Zahlen mit Nullen auffüllen:<br>
+ seq -w 1 10<br>
+<br>
+## Eine Schleife zehn mal ausführen:<br>
+for i in $(seq 1 10); do echo Hallo; done<br>

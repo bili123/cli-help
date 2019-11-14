@@ -1,0 +1,25 @@
+<H1>ls                         </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Verzeichnisse zuerst anzeigen:<br>
+ ls --group-directories-first<br>
+<br>
+## Ausführliche Infos (l) aller (a) Dateien:<br>
+ ls -al<br>
+<br>
+## Nur Ordner anzeigen:<br>
+ ls -d */<br>
+<br>
+## Folgen 2 - 4 aus 09 Staffeln einer Serie anzeigen, benannt nach<br>
+dem Muster: "irgendwas_s01_e02_irgendwas":<br>
+ ls -*s0?_e0[2-4]*<br>
+<br>
+## stat für jede Datei in Ordner ausführen:<br>
+ ls | xargs stat -<br>
+<br>
+## Irgendwas (hier echo) für jede Datei der ls-Ausgabe ausführen:<br>
+for f in $(ls); do echo $f ist super; done<br>
+<br>
+## Versteckte Verzeichnisse anzeigen:<br>
+ ls -d .*/<br>

@@ -1,0 +1,26 @@
+<H1>cp                         </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Datei von a nach b kopieren:<br>
+ cp ~/datei.txt ~/meinordner/datei-kopie.txt<br>
+<br>
+## Ordnerinhalt rekursiv kopieren (r), falls Datei vorhanden nachfragen (i):<br>
+ cp -ri ~/ordner/ ~/backups/<br>
+<br>
+## Ordnerinhalt rekursiv mit Attributen/Rechten (a) und auch versteckten Dateien (.) kopieren:<br>
+ cp -a ~/. ~/backups/<br>
+<br>
+## Bestehende txt-Dateien nicht überschreiben:<br>
+ cp -n ~/*.txt ~/backups/<br>
+<br>
+## Nur überschreiben falls neuer als Zieldatei:<br>
+ cp -u ~/*.txt ~/backups/<br>
+<br>
+In diesem Zusammenhang hilfreich:<br>
+<br>
+## Kopieren über ein Netzwerk:<br>
+ curl -s cli.help/scp<br>
+<br>
+## Dateien verschieben:<br>
+ curl -s cli.help/mv<br>

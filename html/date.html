@@ -1,0 +1,26 @@
+<H1>date                       </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Datum wie "Sonntag,20.10.2019" ausgeben:<br>
+ date +%A,%d.%m.%Y<br>
+<br>
+## Sekunden seit 1.1.1970 (aka Unixzeit):<br>
+ date +%s<br>
+<br>
+## Datum der letzten Änderung an Datei:<br>
+ date --reference=~/meinedatei.txt<br>
+<br>
+## Kalenderwoche (ISO) ausgeben:<br>
+ date +%V<br>
+<br>
+## Datum in New York ausgeben:<br>
+ TZ=America/New_York date<br>
+<br>
+## Datum hier, wenn in New York 10.00 Uhr:<br>
+ date --date='"TZ=America/New_York" 10:00'<br>
+<br>
+## In diesem Zusammenhang auch interessant:<br>
+<br>
+## Zeitzone interaktiv bestimmen:<br>
+ tzselect <br>

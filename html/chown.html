@@ -1,0 +1,32 @@
+<H1>chown                      </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Besitzer/Nutzer einer Datei ändern:<br>
+ chown peter ~/meine-datei<br>
+<br>
+## Besitzer rekursiv für Ordner ändern:<br>
+ chown -R peter ~/mein-ordner<br>
+<br>
+## Nutzer und Gruppe einer Datei ändern:<br>
+ chown peter:gruppe123 ~/meine-datei<br>
+<br>
+## Nutzer nur bei gegebenem Nutzer ändern:<br>
+ chown --from=thomas:gruppe999 peter:gruppe123 ~/meine-datei<br>
+<br>
+## Sym-Links statt der verlinkten Dateien behandeln:<br>
+ chown -R -h peter ~/mein-ordner<br>
+<br>
+In diesem Zusammenhang hilfreich:<br>
+<br>
+## Gruppen und Nutzer einer Datei:<br>
+ ls -l ~/meine-datei<br>
+<br>
+## Rechte ändern:<br>
+ curl -s cli.help/chmod<br>
+<br>
+## Besitzer ändern:<br>
+ curl -s cli.help/chown<br>
+<br>
+## Gruppen ändern:<br>
+ curl --s cli.help/chgrp<br>

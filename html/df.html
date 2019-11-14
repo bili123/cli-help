@@ -1,0 +1,18 @@
+<H1>df                         </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Dateisystme auflisten, menschenlesbar (-h):<br>
+ df -h<br>
+<br>
+## Dateisysteme mit angegebenen Infos ausgeben:<br>
+ df -h --output=source,target,size,used,avail<br>
+<br>
+## Dateisysteme ohne die tmpfs-Laufwerke:<br>
+ df --exclude-type=tmpfs<br>
+<br>
+## Dateisysteme mit Zusammenfassung des Speichers:<br>
+ df --total<br>
+<br>
+## Eine hübsche, nützliche Ausgabe:<br>
+ df -h --output=source,size,used,avail,target --exclude-type=tmpfs --total<br>

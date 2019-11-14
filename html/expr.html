@@ -1,0 +1,21 @@
+<H1>expr                       </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## 3 + 5 ausrechnen:<br>
+ expr 3 + 5<br>
+<br>
+## Anzahl Zeichen in einer Datei ausgeben:<br>
+ expr length "$(cat ~/datei.txt)"<br>
+<br>
+## 5 Zeichen ab Position 4 aus datei.txt (-> 123abcde9) ausgeben:<br>
+ expr substr "$(cat ~/datei.txt)" 4 5<br>
+<br>
+## Stelle des ersten Vorkommens von c oder b in abcde:<br>
+ expr index abcde cb<br>
+<br>
+## Anzahl Stellen, die von Beginn an identisch sind (hier: 3):<br>
+ expr atch "abcdefg" "abc"<br>
+<br>
+## expr in einer if-Abfrage nutzen:<br>
+if $(expr 4 > 2); then echo wahr; else echo falsch; fi<br>

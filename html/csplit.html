@@ -1,0 +1,28 @@
+<H1>csplit                     </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Aus datei.txt ZWEI Dateien erstellen: xx00 mit Zeilen 1-3 und xx01 mit den<br>
+restlichen Zeilen:<br>
+ csplit datei.txt 4<br>
+<br>
+## Aus datei.txt DREI Dateien erstellen: xx00 mit Zeilen 1-3 und xx01 mit den<br>
+Zeilen 4-10 und xx02 mit restlichen Zeilen:<br>
+ csplit datei.txt 4 11<br>
+<br>
+## Datei alle 5 Zeilen aufteilen, Nicht-Teilbarkeit des Rests ignorieren und<br>
+Dateien behalten (-k):<br>
+ csplit -k datei.txt 5 {*}<br>
+<br>
+## Namensliste in zwei Dateien (xx00, xx01) aufteilen, liste.txt bei "Mueller"<br>
+(die Muellers landen in xx01) trennen:<br>
+ csplit liste.txt /Mueller/<br>
+<br>
+## Namensliste bei Mueller teilen und Dateien namen_1.txt und namen_2.txt erstellen:<br>
+ csplit --prefix=namen_ --suffix-format=%01d.txt liste.txt /Mueller/<br>
+<br>
+## Liste bei jeder Instanz von "Montag" in einer Zeile aufsplitten:<br>
+ csplit -k datei.txt /Montag/ {*}<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/split<br>

@@ -1,0 +1,25 @@
+<H1>md5sum                     </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## md5-Checksumme von datei.txt ausgeben:<br>
+ md5sum datei.txt<br>
+<br>
+## md5-Checksumme jeder Datei in summen.txt speichern:<br>
+ md5sum ~/meinordner/* > summen.txt<br>
+<br>
+## Prüfen, ob Checksummen in summen.txt den Checksummen der Dateien entsprechen:<br>
+ md5sum -c summen.txt<br>
+<br>
+## md5-Checksummen prüfen, aber nur Fälle falscher Summen ausgeben:<br>
+ md5sum -c --ignore-missing --quiet summen.txt<br>
+<br>
+## Dateien von orig nach ziel kopieren und auf Integrität testen:<br>
+cd orig/ && md5sum * > ../ziel/summen.txt && cp * ../ziel/ && cd ../ziel && md5sum --quiet -c summen.txt && cd ..<br>
+Der Wechsel in die Verzeichnisse ist notwendig, da md5sum ansonsten die Pfade der Dateien mit<br>
+in die summen.txt übernimmt - was beim Prüfen natürlich zu Fehlern führt.<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/sha1sum<br>
+ curl cli.help/sum<br>
+ curl cli.help/cksum<br>

@@ -1,0 +1,18 @@
+<H1>ln                         </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Harte Verknüpfung für datei.txt setzen:<br>
+ ln ~/datei.txt ~/links/datei.txt_hardlink<br>
+<br>
+## Symbolische Verknüpfung für datei.txt setzen:<br>
+ ln --symbolic ~/datei.txt ~/links/datei.txt_symlink<br>
+<br>
+## Verknüpfungen für alle txt-Dateien in Ziel (-t) erstellen:<br>
+ ln -t ~/backups/ ~./dateien/*.txt<br>
+<br>
+## Nummerierte Backups für Zieldateien:<br>
+ ln --backup=numbered -t ~/backups/ ~./dateien/*.txt<br>
+<br>
+## Verknüpfung auf datei.txt im aktuellen Verzeichnis:<br>
+ ln /irgend/ein/pfad/datei.txt<br>

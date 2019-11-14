@@ -1,0 +1,23 @@
+<H1>cut                        </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Zeichen (-c) 2-4 jeder Zeile aus datei.txt ausgeben:<br>
+ cut -c 2-4 < datei.txt<br>
+<br>
+## Zeilen AB Zeichen 5 ausgeben ausgeben:<br>
+ cut -c 5- < datei.txt<br>
+<br>
+## Zeilen BIS Zeichen 5 ausgeben ausgeben:<br>
+ cut -c -5 < datei.txt<br>
+<br>
+## Spalten (-f) 2 und 4 ausgeben, Spaltenseparator ist Leerzeichen (-d" "):<br>
+ cut -d" " -f2,4 liste.csv<br>
+<br>
+## Vor jede Zeile von url-liste.csv http:// schreiben (mit nl), dann<br>
+7-stellige Zeilennummerierung (0000001, 0000002, ...) entfernen:<br>
+ nl -s "http://" url-liste.csv | cut -c7-<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/split<br>
+ curl cli.help/csplit<br>

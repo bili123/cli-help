@@ -25,16 +25,16 @@ Weitere Infos und alle Features: [92mcurl cli.help
 [33m## Text in Wortliste verwandeln:
 [31m fmt [0m-0 datei.txt
 
-[33m## Zeilen, die mit "### Comment" anfangen auf 20 Zeichen Breite
-formatieren und jeder Zeile "### Comment" voranstellen:
-[31m fmt [0m-20 -p"### Comment" datei.txt
+[33m## Zeilen, die mit "XXX Comment" anfangen auf 20 Zeichen Breite
+formatieren und jeder Zeile "XXX Comment" voranstellen:
+[31m fmt [0m-20 -p"XXX Comment" datei.txt
 
 [33m## Zeilen wie "Zutat: Zucker" und "Zutat: Salz" zu einer Zeile in der Art
 "Zutat: Zucker Salz" zusammenfassen - fast derselbe Befehl wie oben!
 [31m fmt [0m-pZutat: rezept.txt
 
 [33m## Nur lange Zeilen umbrechen, kurze nicht zusammenfassen:
-[31m fmt [0m-s -20 -p"### Comment" datei.txt
+[31m fmt [0m-s -20 -p"XXX Comment" datei.txt
 
 [33m## Text in Wortliste verwandeln:
 [31m fmt [0m-0 datei.txt

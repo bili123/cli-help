@@ -1,0 +1,24 @@
+<H1>nl                         </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## datei.txt ausgeben und vor jede Zeile Zahl (sechstellig) und TAB voranstellen:<br>
+ nl datei.txt<br>
+<br>
+## Wie oben, aber vierstellige Zahl und : statt TAB:<br>
+ nl -w4 -s: datei.txt<br>
+<br>
+## Wie oben, aber mit anführenden Nullen:<br>
+ nl -w4 -s: -nrz datei.txt<br>
+<br>
+## Nur Zeilen nummerieren, die "Montag" oder "Sonntag" enthalten:<br>
+ nl -b p'\(Montag\|Sonntag\)' datei.txt<br>
+<br>
+## Ordnerinhalt durchnummerieren:<br>
+ nl <(ls ~/ordner)<br>
+<br>
+## Wie oben, aber Nummerierung wieder ausschneiden und somit reine Dateinamenliste erstellen:<br>
+ nl <(ls ~/ordner) | cut -c7-<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/cut<br>

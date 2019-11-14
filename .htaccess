@@ -4,4 +4,4 @@ RewriteCond %{HTTP_USER_AGENT} Mozilla
 RewriteRule ^index.html$ http://cli.help/browser.html
 
 RewriteCond %{HTTP_USER_AGENT} Mozilla
-RewriteRule ^([a-z0-9]*)$ /$1.html [L,R=302]
+RewriteRule ^([a-z0-9]*)$ /html/$1.html [L,R=302]

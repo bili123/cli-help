@@ -1,0 +1,19 @@
+<H1>comm                       </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## datei1 und datei2 Zeile für Zeile vergleichen und dreispaltig<br>
+ausgeben: Nur in datei1, nur in datei2, in beiden Dateien:<br>
+ comm datei1 datei2<br>
+<br>
+## Nur Gemeinsame Zeilen ausgeben:<br>
+ comm -12 datei1 datei2<br>
+<br>
+## Inhalte vor dem Vergleichen sortieren:<br>
+ comm <(sort datei1) <(sort datei2)<br>
+<br>
+## Inhalte von zwei Verzeichnissen vergleichen, nur Unterschiede ausgeben:<br>
+ comm -3 <(ls ordner1/) <(ls ordner2/)<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/sort<br>

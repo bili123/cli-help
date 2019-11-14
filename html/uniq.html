@@ -1,0 +1,21 @@
+<H1>uniq                       </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Doppelte, aufeinanderfolgende Zeilen nur einmal ausgeben: <br>
+ uniq liste.txt<br>
+<br>
+## Zeilen erst sortieren, dann doppelte Zeile nur einmal ausgeben:<br>
+ uniq <(sort liste.txt)<br>
+<br>
+## Nur doppelte Zeilen mehrerer Dateien ausgeben:<br>
+ uniq -u <(sort listen*.txt)<br>
+<br>
+## Nur doppelte Zeilen mehrerer Dateien ausgeben - besser mit sort:<br>
+ sort -u listen*.txt<br>
+<br>
+## Worthäufigkeiten zählen: Sortieren, dann Vorkommen zählen, dann nach Zahlen sortieren:<br>
+ cat wortlisten_*.txt | sort | uniq -c | sort -n<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/sort<br>
