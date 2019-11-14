@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sed -re '
+s/^(.*)/\1\<br\>/g
+s/\[..?m//g
+s/#{43}//g
+s/## *(.*)##/\<H1\>\1\<\/H1\>\ncli\.help ist für den Terminal gedacht:\<br\>\<i\>curl cli\.help\<\/i\>/g
+' "$@" | tail -n +20
+
