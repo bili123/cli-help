@@ -32,7 +32,7 @@ Inhalte | Aufrufe | Status
 cli.help-Startseite mit Projektinfos | start, index, main, hilfe, help | Fertig
 Seite mit allen Seiten als Liste | liste, befehle, kommandos, tools, programme, list | Aktuell
 Seite mit ALLEN Hilfen zum Durchsuchen | alles, komplett, dump | Aktuell
-Thematische Übersichten | nutzer, rechte, aliasse, dateien, ordner, text, textverarbeitung, suche, prozesse, netzwerk, installieren, paketmanagement, pakete, update, regex | TBD
+Thematische Übersichten | **nutzer,** rechte, aliasse, dateien, ordner, text, textverarbeitung, suche, prozesse, netzwerk, installieren, paketmanagement, pakete, update, regex | TBD (fett=fertig)
 Sammlung von Aliassen | aliasse | TBD
 Typische Linux-Tools | awk, sed, curl und so weiter | TBD
 GNU Core Utilities (insgesamt 84 Tools) | ls, echo, groups, user, nice, chroot und so weiter | Fertig
