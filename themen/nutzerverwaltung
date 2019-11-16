@@ -1,0 +1,101 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            Thema: Nutzer/Gruppen      ##
+###########################################
+
+[33m## Rechte-Notationen - je für Besitzer, Gruppe, andere:
+[31mOktal   Binär   Symbol   Menschlich[0m
+0       000              nichts
+1       001     x        ausführen
+2       010     w        schreiben
+3       011     rw       schreiben, lesen 
+4       100     r        lesen
+5       101     rx       lesen, ausführen
+6       110     rw       lesen, schreiben 
+7       111     rwx      lesen, schreiben, ausführen 
+
+[33m## Aktuell angemeldete Nutzer anzeigen:
+[31m users
+
+[33m## Aktuell angemeldete Nutzer anzeigen:
+[31m who [0m
+
+[33m## Alle Nutzer auflisten:
+[31m cut[0m -d: -f1 /etc/passwd
+
+[33m## Nutzer mit Home-Verzeichnis erstellen und in Gruppen aufnehmen:
+[31m adduser[0m -m -G sudo,gruppe2,gruppe3 peter
+
+[33m## Nutzer zu Gruppe hinzufügen:
+[31m adduser[0m peter sudo
+
+[33m## Erstellen mit Home-Pfad (b), Namen für Login-Anzeige (c), Home-Verzeichnis für alle Kinder (d),
+primärer Gruppe (g), Standard-Shell (s), Ablaufdatum (e); zudem wird eine Ordnerstruktur ins neue Home kopiert (k):
+[31m adduser[0m -b /home -c Klein-Peterchen -d /home/kinder -e 2020-07-11
+-g peter-prime-group -G gruppe2,gruppe3 -k /demos/order-mit-kinderinhalten -m -s /bin/bash peter
+
+[33m## Nutzer samt Home-Verzeichnis entfernen:
+[31m userdel [0m-r peter
+
+[33m## Nutzer peterchen modifizieren, hier Home-Verzeichnis (d) verschieben (m) und in Gruppe3 hinzufügen (aG):
+[31m useradd [0m-d /home/peter -m -aG Gruppe3 peterchen
+
+[33m## Nutzername der aktuellen Nutzer-ID anzeigen:
+[31m whoami
+
+[33m## Nutzername der aktuellen Nutzer-ID anzeigen:
+[31m id [0m-un
+
+[33m## Passwort für peter vergeben:
+[31m passwd[0m peter 
+
+[33m## Passwort für peter vergeben, 100 Tage Laufzeit, 5 Tage Vorwanzeit vor Ablauf:
+[31m passwd[0m -x 100 -w 5 peter 
+
+[33m## Besitzer von Dateien rekursiv ändern, Links als solche behandeln (h):
+[31m chown[0m -hR peter:gruppe2 /mein/verzeichnis
+
+[33m## Gruppe von Dateien rekursiv ändern, Links als solche behandeln (h):
+[31m chgrp[0m -hR gruppe2 /mein/verzeichnis
+
+[33m## Neue Gruppe superspione erstellen:
+[31m groupadd [0msuperspione
+
+[33m## Gruppen eines Nutzers auflisten:
+[31m groups[0m peter
+
+[33m## Alle Gruppen auflisten:
+[31m cut[0m -d: -f1 /etc/group
+
+[33m## Gruppenkonfiguration reinitialisieren:
+[31m newgrp[0m -
+
+[33m## Gruppe superspione ein Passwort zuordnen:
+[31m groupmod [0m-p GEHEIM superspione
+
+[33m## Dateien finden, die Nutzer peter gehören:
+[31m find [0m/ -user peter
+
+[33m## Dateien Peters Home-Verzeichnis finden, deren Gruppe Eltern ist gehören:
+[31m find [0m/home/peter -group Eltern
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/hilfe
+[31m curl [0mcli.help/users
+[31m curl [0mcli.help/id
