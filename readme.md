@@ -18,6 +18,12 @@ Ihr könnt cli.help überall nutzen, wo das Standardprogramm **curl** läuft. De
 	curl cli.help/nutzerverwaltung
 	curl cli.help/rechte
 	
+Ihr könnt die Seiten auch herunterladen und offline mit **cat** nutzen:
+
+    wget $(curl cli.help/liste | tail -n +24 | head -n -5 | nl -s"cli.help/" | cut -c7-)
+ 
+ wget bekommt einfach die Liste aller Tools, dank nl als URLs - der Rest (tail, head, cut) schneidet nur Ballast aus.
+	
 ## Status und Inhalt
 cli.help ist aktuell noch **im Aufbau** und entsprechend gibt es noch nicht alle Hilfeseiten. Ihr bekommt eine Liste aller fertigen Seiten über wahlweise:
 
