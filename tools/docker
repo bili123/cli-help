@@ -1,0 +1,64 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##            Docker                     ##
+###########################################
+
+[33m## Docker installieren (Ubuntu):
+[0msudo apt-get install \
+apt-transport-https \
+ca-certificates \
+curl \
+software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) \
+stable"
+sudo apt-get update -y
+sudo apt-get install docker-ce -y
+
+[33m## Image "mein-image" aus Dockerfile "dockerfile" erstellen:
+[31m docker build[0m -t mein-image .
+
+[33m## Lokale Images auflisten:
+[31m docker images
+
+[33m## Laufende Container mit IDs auflisten 1:
+[31m docker container[0m ls
+
+[33m## Laufende Container mit IDs auflisten 2:
+[31m docker ps
+
+[33m## Ubuntu von Docker Hub starten und interaktive Shell aufrufen:
+[31m docker run[0m -it ubuntu
+
+[33m## ip-Befehl im laufenden Container mit der ID 12345678 ausführen:
+[31m docker exec[0m 12345678 ip
+
+[33m## Apache detached (-d) starten, auf Port 88 leiten (-p)
+[31m docker run[0m -d -p 88:80 httpd
+
+[33m## Host-Ordner "~/Downloads/docker" im Container-Ordner "~/Downloads" mounten:
+[31m docker run[0m -v /home/Downloads/docker:/home/Downloads -it -d ubuntu
+
+[33m## Grafische Anwendung Xeyes auf dem Host-Desktop darstellen:
+[31m docker run[0m -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix gns3/xeyes
+
+[33m## Image mein-image aus laufendem Container mit ID 12345678 erstellen:
+[31m docker commit[0m 12345678 mein-image

@@ -34,7 +34,7 @@ Weitere Infos und alle Features: [92mcurl cli.help
 [31m users
 
 [33m## Aktuell angemeldete Nutzer anzeigen:
-[31m who [0m
+[31m who
 
 [33m## Alle Nutzer auflisten:
 [31m cut[0m -d: -f1 /etc/passwd
