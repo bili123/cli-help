@@ -1,0 +1,61 @@
+<H1>Git                        </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Standard-Git-Workflow nach Editieren von datei1 und Anlegen von datei2:<br>
+ git pull<br>
+ git add datei2<br>
+ git commit -am "ABC in datei1 geändert und datei2 angelegt."<br>
+ git push<br>
+<br>
+## Nur datei3 committen:<br>
+ git commit -m "Meine Commit-Nachricht." datei3<br>
+<br>
+## Log anzeigen und aufhübschen:<br>
+ git log --graph -p --stat --color-words<br>
+<br>
+## Noch nicht gepushte Commits anzeigen:<br>
+ git log --stat origin/master..master<br>
+<br>
+## Einzelnen Commit mit Hash 123456 hübsch anzeigen:<br>
+ git show --pretty=fuller --abbrev-commit 123456<br>
+<br>
+## Die letzten drei Commits zurücknehmen - zwei Varianten:<br>
+ git reset HEAD^^^<br>
+ git reset HEAD~3<br>
+<br>
+## Nicht committete Änderungen in datei1 rückgängig machen. Anders<br>
+ausgedrückt: datei1 mit Stand des letzten Commits überschreiben:<br>
+ git checkout -- /mein/ordner/datei1<br>
+<br>
+## Nicht geaddete Dateien interaktiv löschen:<br>
+ git clean -i<br>
+<br>
+## Branch testing erstellen, dorthin wechseln, Upstream setzen,<br>
+Änderungen aus master-Branch holen und mergen:<br>
+ git branch testing<br>
+ git checkout testing<br>
+ git push --set-upstream origin testing<br>
+ git pull origin master<br>
+<br>
+## Aus Branch master heraus den lokalen testing-Branch mergen:<br>
+ git merge testing<br>
+<br>
+## Entfernte Quell-URL des Repositories anzeigen:<br>
+ git remote show origin<br>
+<br>
+## Vergessene neue Datei datei6 nachträglich in letzten Commit aufnehmen:<br>
+ git add datei6<br>
+ git commit --amend --no-edit<br>
+<br>
+## Nutzername und -Mail global festlegen:<br>
+ git config --global user.name "Peter Pan"<br>
+ git config --global user.email peterpan@example.com<br>
+<br>
+## Git-Konfiguration ausgeben:<br>
+ git config --list<br>
+<br>
+## Und falls Ihr bei Merge-Konflikten mal im vi-Editor landet: i-Taste drücken für <br>
+Eingabemodus, Merge-Nachricht eingeben. Dann ESC-Taste drücken und folgenden Befehl zum <br>
+Speichern (w) und Beenden (q) ausführen:<br>
+ :wq<br>
