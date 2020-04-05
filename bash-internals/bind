@@ -1,0 +1,51 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##               bind                    ##
+###########################################
+
+[33m## An Tastenkürzel anbindbare (Editing-)FUNKTIONEN (-P) samt
+Kürzeln (soweit angebunden) anzeigen:
+[31m bind [0m-P
+
+[33m## An Tastenkürzel angebundene SHELL-KOMMANDOS (-X) anzeigen:
+[31m bind [0m-X
+
+[33m## An Tastenkürzel angebundene MAKROS (-S) anzeigen:
+[31m bind [0m-X
+
+[33m## Tastenkürzel STRG-K (\C-k) für das KOMMANDO (-x) xeyes anlegen:
+[31m bind [0m-x '"\C-k":xeyes'
+
+[33m## Für die folgenden Beispiele nützlich: Keycode für F7 anzeigen:
+[31m STRG-V [0mF7
+
+[33m## MAKRO-Text "Hello World" an Taste F7 (Keycode: [20~ und \e als Escape-Zeichen) binden:
+[31m bind [0m'"\e[20~":"Hello World"'
+
+[33m## FUNKTION undo an F7 binden:
+[31m bind [0m'"\e[20~":undo'
+
+[33m## Keymap von vi statt des emacs-Standards nutzen:
+[31m bind [0m-m vi
+
+[33m## Binding für STRG-K löschen:
+[31m bind [0m-r "\C-k"
+
+[33m## Alle Bindings für Funktion undo löschen:
+[31m bind [0m-u undo

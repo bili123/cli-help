@@ -1,0 +1,36 @@
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+###########################################
+
+[33m## Beschreibender Text ...
+[31m KOMMANDO [0mOPTIONEN
+
+[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
+[31m wc [0m-w ~/ordner/*.txt
+
+[33m## GELB
+[31m ROT [0mWEIß
+
+[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
+da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
+Optionen, Pipes und dergleichen in WEIß. 
+
+Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
+https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
