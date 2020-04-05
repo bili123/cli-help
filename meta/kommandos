@@ -117,6 +117,7 @@ cd
 command
 compgen
 complete
+compopt
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:
