@@ -42,6 +42,7 @@ Thematische Übersichten | **nutzer,** rechte, aliasse, dateien, ordner, text, t
 Sammlung von Aliassen | aliasse | TBD
 Typische Linux-Tools | awk, sed, curl, **docker, git** ... | TBD (fett=fertig)
 GNU Core Utilities (insgesamt 84 Tools) | ls, echo, groups, user, nice, chroot und so weiter | Fertig
+Bash Builtins (insgesamt 55 Tools) | **alias, bg, bind, compgen,** eval, let und so weiter | 10 fertig
 Persönliche Cheat Sheets | cheatsheet_INITIALEN, cheatsheet_ml und so weiter | Dauerbaustelle
 Hilfe für Dein Tool | dein_tool, sein_tool, ihr_tool | Melden!
 
