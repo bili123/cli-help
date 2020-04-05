@@ -1,0 +1,21 @@
+<H1>builtin                    </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Bash-eigenen echo-Befehl nutzen, obwohl weiterer echo-Befehl existiert:<br>
+ builtin echo Hallo<br>
+<br>
+## Beispiel: Standard-echo nutzen, obwohl echo als Alias für "echo -e" gesetzt ist:<br>
+ alias echo='echo -e'<br>
+ echo "Hallo\nWelt"<br>
+### Ausgabe:<br>
+    Hallo<br>
+    Welt<br>
+ builtin echo "Hallo\nWelt"<br>
+### Ausgabe:<br>
+    Hallo\nWelt<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/alias<br>
+ curl cli.help/echo<br>
+ curl cli.help/command<br>
