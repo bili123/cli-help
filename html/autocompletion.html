@@ -1,0 +1,34 @@
+<H1>autocompletion           </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Auto Completion ist ein recht komplexes Thema. Im Netz gibt<br>
+es viele Tutorials für echte praxisrelevante Skripte dazu - hier nicht.<br>
+Hier folgt der Versuch, die Befehle compgen, complete, compopt in möglichst<br>
+einfachen Varianten zu nutzen. Das kann beim Grundverständnis helfen<br>
+oder bei der Syntax.<br>
+<br>
+## Elemente aus "foo fuu option3 option3" ausgeben, die mit f beginnen:<br>
+ compgen -W 'foo fuu option3 option3' -- f<br>
+<br>
+## Die Eingabe "./meinskript [TAB][TAB]" per Autovervollständigung mit<br>
+Verzeichnisnamen im aktuellen Verzeichnis erweitern:<br>
+ complete -o dirnames ./meinskript<br>
+<br>
+## Die Option "dirnames" aus obigem Beispiel wieder entfernen:<br>
+ compopt +o dirnames ./meinskript<br>
+<br>
+## Simpelst mögliches Beispiel: Autovervollständigung der Eingabe "foobar [TAB][TAB]"<br>
+mit den Optionen zunge, hand oder bein. Bei der Eingabe "foobar b [TAB][TAB]" wird<br>
+nur die Option bein angeboten und so weiter.<br>
+Skript unter "/etc/bash_completion.d/IRGENDEINNAME" erstellen, anschließend ausführen:<br>
+<br>
+_foobarcompletion() <br>
+{<br>
+    local getippte_buchstaben<br>
+    getippte_buchstaben="${COMP_WORDS[COMP_CWORD]}"<br>
+    COMPREPLY=( $(compgen -W "zunge hand bein" -- ${getippte_buchstaben}) )<br>
+}<br>
+complete -F _foobarcompletion foobar<br>
+<br>
+Supi einfach ... ;)<br>
