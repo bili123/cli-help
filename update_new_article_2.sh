@@ -24,5 +24,8 @@
     	## Neue Dateien hinzufügen und Änderungen committen:
         git add . 
         git commit -am "$i hinzugefügt; Listen, Dumps und readme.md aktualisiert"
+		
+		## Infos für mich selbst:
+		echo -e "NEXT:\nPushen\nFilezilla-Upload\nFertig"
     
     done
