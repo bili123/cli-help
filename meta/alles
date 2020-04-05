@@ -3330,3 +3330,41 @@ Weitere Infos und alle Features: [92mcurl cli.help
 [31m curl [0mcli.help/alias
 [31m curl [0mcli.help/echo
 [31m curl [0mcli.help/command
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##                 cd                    ##
+###########################################
+
+[33m## Ins Home-Verzeichnis des Nutzers wechseln 1:
+[31m cd
+
+[33m## Ins Home-Verzeichnis des Nutzers wechseln 2:
+[31m cd [0m~
+
+[33m## In übergeordnetes Verzeichnis wechseln:
+[31m cd [0m..
+
+[33m## Ins Verzeichnis "test" zwei Ebenen weiter oben wechseln:
+[31m cd [0m../../test
+
+[33m## In Quelle (/etc) eines verknüpften Verzeichnisses (~/etc-shortcut) wechseln:
+[31m cd [0m-P ~/etc-shortcut
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/ls
