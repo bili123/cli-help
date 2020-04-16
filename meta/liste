@@ -127,6 +127,7 @@ echo
 enable
 eval
 exec
+exit
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:
