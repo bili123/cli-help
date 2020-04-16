@@ -1,0 +1,45 @@
+<H1>dirstack                </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Beispiel 1 - Stapelauf- und -abbau:<br>
+pushd: Verzeichnis dem Verzeichnisstapel hinzufügen und ins Verzeichnis wechseln.<br>
+popd: Top-Verzeichnis (aktuelles) vom Stapel entfernen und ein Verzeichnis zurück<br>
+springen - bis wieder im Home-Verzeichnis (~) mit leerem Stapel:<br>
+ mkdir ~/1 ~/2 ~/3 ~/4<br>
+ pushd 1 --> Ins Verzeichnis 1.<br>
+ pushd ../2 --> Ins Verzeichnis 2.<br>
+ pushd ../3 --> Ins Verzeichnis 3.<br>
+ pushd ../4 --> Verzeichnis 4 jetzt Top-Verzeichnis, Stapel besteht aus 1, 2, 3, 4.<br>
+ popd --> Zurück in 3<br>
+ popd --> Zurück in 2<br>
+ popd --> Zurück in 1<br>
+ popd --> Zurück in ~ und Stapel ist leer.<br>
+<br>
+## dirs: Verzeichnisstapel samt Verzeichnisnummern (-v) anzeigen: <br>
+ dirs -v<br>
+<br>
+## Beispiel 2 - Short-cuts:<br>
+Verzeichnisstapel mit 1, 2, 3, 4 so anlegen, dass man später mit<br>
+"cd ~1", "cd ~2" etc. zwischen den Verzeichnissen wechseln kann:<br>
+ mkdir ~/1 ~/2 ~/3 ~/4<br>
+ pushd 4 --> Ins Verzeichnis 4.<br>
+ pushd ../3 --> Ins Verzeichnis 3.<br>
+ pushd ../2 --> Ins Verzeichnis 2.<br>
+ pushd ../1 --> Ins Verzeichnis 1.<br>
+ pushd . --> Nochmal Verzeichnis 1, damit es im Stapel Nummer 1 (und 0) ist (sonst wäre es nur 0).<br>
+ dirs -v<br>
+ Ausgabe:<br>
+ 0  ~/stapel/1<br>
+ 1  ~/stapel/1<br>
+ 2  ~/stapel/2<br>
+ 3  ~/stapel/3<br>
+ 4  ~/stapel/4<br>
+ 5  ~/stapel<br>
+ cd ~1 --> Ins Verzeichnis 1.<br>
+ cd ~3 --> Ins Verzeichnis 3.<br>
+ cd ~5 --> Ins Verzeichnis ~.<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/cd<br>
+ curl cli.help/pwd<br>

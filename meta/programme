@@ -120,6 +120,7 @@ compopt
 continue
 declare
 dirs
+dirstack
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:
