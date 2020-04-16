@@ -1,0 +1,27 @@
+<H1>export                   </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Alle aus der aktuellen Shell in Sub-Shells exportiert<br>
+werdende Variablen und Funktionen ausgeben:<br>
+ export -p<br>
+<br>
+## Variable/Funktion a in Sub-Shells zur Verfügung stellen:<br>
+ export a<br>
+<br>
+## Beispiel: Variable a definieren, exportieren und in Sub-Shell ausgeben:<br>
+ a="Hallo Welt"<br>
+ export a<br>
+ bash<br>
+ echo $a<br>
+<br>
+## Beispiel: Funktion fow definieren, exportieren und in Sub-Shell nutzen:<br>
+ fow () { fortune | cowsay; }<br>
+ export fow<br>
+ bash<br>
+ fow<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/declare<br>
+ curl cli.help/exec<br>
+<br>

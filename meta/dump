@@ -3868,3 +3868,47 @@ Doch simpel gestickt ist er, unser Held:
 
 [33m## In diesem Zusammenhang interessant:
 [31m curl [0mcli.help/eval
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##              export                   ##
+###########################################
+
+[33m## Alle aus der aktuellen Shell in Sub-Shells exportiert
+werdende Variablen und Funktionen ausgeben:
+[31m export [0m-p
+
+[33m## Variable/Funktion a in Sub-Shells zur Verfügung stellen:
+[31m export [0ma
+
+[33m## Beispiel: Variable a definieren, exportieren und in Sub-Shell ausgeben:
+[0m a="Hallo Welt"
+[31m export [0ma
+[0m bash
+[0m echo $a
+
+[33m## Beispiel: Funktion fow definieren, exportieren und in Sub-Shell nutzen:
+[0m fow () { fortune | cowsay; }
+[31m export [0mfow
+[0m bash
+[0m fow
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/declare
+[31m curl [0mcli.help/exec
+
