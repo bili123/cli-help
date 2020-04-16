@@ -1,0 +1,41 @@
+<H1>declare                 </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Variable meine_var anlegen und mit dem Wert 11 belegen - identische Varianten:<br>
+ declare eine_var=11<br>
+ declare eine_var="11"<br>
+ declare -- meine_var=11<br>
+ meine_var=11<br>
+<br>
+## Variable mit Nur-Lesen-Attribut anlegen:<br>
+ declare -r meine_var="Hallo Welt"<br>
+<br>
+## Variable als Integer (-i) deklarieren und Berechnung durchführen<br>
+(Ausgabe wird 4, ohne -i wäre es der String "2+2"):<br>
+ declare -i meine_var="2+2"<br>
+<br>
+## Integer-Deklaration aus obigem Beispiel entfernen:<br>
+ declare +i meine_var<br>
+<br>
+## Assoziatives Array cities mit Großstädten als Schlüsseln und Ländern als Werten<br>
+anlegen; anschließend das Land, das zur Stadt Berlin gehört ausgeben:<br>
+ declare -A cities ( [berlin]=brd burg]=brd [paris]=fra )<br>
+ echo ${cities[berlin]}<br>
+ <br>
+## Obiges Array: Alle Schlüssel ausgeben, alle Werte ausgeben, ganzes Array ausgeben,<br>
+in der Form "berlin : brd":<br>
+ for i in "${!cities[@]}"; do echo $i; done<br>
+ for i in "${cities[@]}"; do echo $i; done<br>
+ for i in "${!cities[@]}"; do echo $i : ${cities[$i]}; done<br>
+<br>
+## Schlüssel berlin aus obigem Beispiel löschen:<br>
+ unset cities[berlin]<br>
+<br>
+## Indexiertes Array mit Wochentagen anlegen, dann Arbeitstage ausgeben:<br>
+ declare  tage=( [1]=Montag [2]=Dienstag [3]=Mittwoch [4]=Donnerstag [5]=Freitag [6]=Samstag [7]=Sonntag )<br>
+ for i in {1..5}; do echo ${tage[$i]}; done<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/loops<br>
+ curl cli.help/local<br>
