@@ -3752,3 +3752,36 @@ eigenes Programm ~/meine-tools/mehr-ordner/wait einfach via wait nutzen zu könn
 
 [33m## In diesem Zusammenhang interessant:
 [31m curl [0mcli.help/builtin
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##                 eval                  ##
+###########################################
+
+[33m## Argumente als Shell-Kommando ausführen - hier: echo "Hallo Welt" schreiben lassen:
+[31m eval [0mecho Hallo Welt
+
+[33m## Variable a mit einer Pipe belegen und diese dann ausführen:
+[0m a="fortune | cowsay"
+[31m eval [0m$a
+
+[33m## Den Befehl "echo Hallo Welt" aus drei Bausteinen zusammensetzen und ausführen:
+[0m befehl=echo; wort1=Hallo; wort2=Welt; [31meval[0m $befehl $wort1 $wort2
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/exec

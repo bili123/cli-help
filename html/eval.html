@@ -1,0 +1,16 @@
+<H1>eval                  </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Argumente als Shell-Kommando ausführen - hier: echo "Hallo Welt" schreiben lassen:<br>
+ eval echo Hallo Welt<br>
+<br>
+## Variable a mit einer Pipe belegen und diese dann ausführen:<br>
+ a="fortune | cowsay"<br>
+ eval $a<br>
+<br>
+## Den Befehl "echo Hallo Welt" aus drei Bausteinen zusammensetzen und ausführen:<br>
+ befehl=echo; wort1=Hallo; wort2=Welt; eval $befehl $wort1 $wort2<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/exec<br>
