@@ -16,21 +16,18 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##                 enable                ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Bash-interne Kommandos samt Status auflisten:
+[31m enable [0m-a
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Das Bash-interne Kommando wait deaktivieren (zum Beispiel, um ein
+eigenes Programm ~/meine-tools/mehr-ordner/wait einfach via wait nutzen zu können):
+[31m enable [0m-n wait
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## wait wieder aktivieren:
+[31m enable [0m wait
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
-
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/builtin

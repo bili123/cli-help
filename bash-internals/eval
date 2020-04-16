@@ -16,21 +16,18 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##                 eval                  ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Argumente als Shell-Kommando ausführen - hier: echo "Hallo Welt" schreiben lassen:
+[31m eval [0mecho Hallo Welt
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Variable a mit einer Pipe belegen und diese dann ausführen:
+[0m a="fortune | cowsay"
+[31m eval [0m$a
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Den Befehl "echo Hallo Welt" aus drei Bausteinen zusammensetzen und ausführen:
+[0m befehl=echo; wort1=Hallo; wort2=Welt; [31meval[0m $befehl $wort1 $wort2
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
-
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/exec

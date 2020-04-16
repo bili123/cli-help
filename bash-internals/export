@@ -16,21 +16,29 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##              export                   ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Alle aus der aktuellen Shell in Sub-Shells exportiert
+werdende Variablen und Funktionen ausgeben:
+[31m export [0m-p
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Variable/Funktion a in Sub-Shells zur Verfügung stellen:
+[31m export [0ma
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Beispiel: Variable a definieren, exportieren und in Sub-Shell ausgeben:
+[0m a="Hallo Welt"
+[31m export [0ma
+[0m bash
+[0m echo $a
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## Beispiel: Funktion fow definieren, exportieren und in Sub-Shell nutzen:
+[0m fow () { fortune | cowsay; }
+[31m export [0mfow
+[0m bash
+[0m fow
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/declare
+[31m curl [0mcli.help/exec
+

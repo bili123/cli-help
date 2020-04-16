@@ -16,7 +16,7 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-##               declare                 ##
+##           Kopie von declare           ##
 ###########################################
 
 [33m## Variable meine_var anlegen und mit dem Wert 11 belegen - identische Varianten:
@@ -50,7 +50,7 @@ in der Form "berlin : brd":
 [31m unset [0mcities[berlin]
 
 [33m## Indexiertes Array mit Wochentagen anlegen, dann Arbeitstage ausgeben:
-[31m declare [0m tage=( [1]=Montag [2]=Dienstag [3]=Mittwoch [4]=Donnerstag [5]=Freitag [6]=Samstag [7]=Sonntag )
+[31m declare [0mdeclare tage=( [1]=Montag [2]=Dienstag [3]=Mittwoch [4]=Donnerstag [5]=Freitag [6]=Samstag [7]=Sonntag )
  for i in {1..5}; do echo ${tage[$i]}; done
 
 [33m## In diesem Zusammenhang interessant:

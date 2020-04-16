@@ -118,6 +118,7 @@ command
 compgen
 complete
 compopt
+continue
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:
