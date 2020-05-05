@@ -40,7 +40,7 @@ Seite mit allen Seiten als Liste | liste, befehle, kommandos, tools, programme, 
 Seite mit ALLEN Hilfen zum Durchsuchen | alles, komplett, dump | Aktuell
 Thematische Übersichten | **nutzer, autocompletion, dirstack** rechte, aliasse, dateien, ordner, text, textverarbeitung, suche, prozesse, netzwerk, installieren, paketmanagement, pakete, update, regex | TBD (fett=fertig)
 Sammlung von Aliassen | aliasse | TBD
-Typische Linux-Tools | awk, sed, curl, **docker, git** ... | TBD (fett=fertig)
+Typische Linux-Tools | awk, sed, curl, **docker, git, checkmk** ... | TBD (fett=fertig)
 GNU Core Utilities (insgesamt 84 Tools) | ls, echo, groups, user, nice, chroot und so weiter | Fertig
 Bash Builtins (insgesamt 55 Tools) | **alias, bg, bind, compgen, declare, eval,** let und so weiter | 22 fertig
 Persönliche Cheat Sheets | cheatsheet_INITIALEN, cheatsheet_ml und so weiter | Dauerbaustelle

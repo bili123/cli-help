@@ -129,6 +129,7 @@ exec
 exit
 popd
 pushd
+checkmk
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:
