@@ -14,7 +14,7 @@ Und hier mal eine fertige Hilfeseite für das Programm **tee:**
 Ihr könnt cli.help überall nutzen, wo das Standardprogramm **curl** läuft. Der Aufruf ist immer gleich:
 
     curl cli.help/chmod
-	curl cli.help/grep
+	curl cli.help/fold
 	curl cli.help/nutzerverwaltung
 	curl cli.help/rechte
 	
