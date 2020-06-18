@@ -4790,3 +4790,42 @@ Weitere Infos und alle Features: [92mcurl cli.help
 
 [33m## Alle alternativen Zuordnungen wieder vergessen:
 [31m hash [0m-r
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##                help                   ##
+###########################################
+
+[33m## Bash-interne Funktionen auflisten:
+[31m help [0m
+
+[33m## Hilfe zur Bash-internen Funktion eval aufrufen:
+[31m help [0meval
+
+[33m## Kurzversion der Hilfe zu eval:
+[31m help [0m-d eval
+
+[33m## Hilfe zu eval im Pseudo-manpage-Format:
+[31m help [0m-d eval
+
+[33m## Aufrufsyntax zu eval:
+[31m help [0m-s eval
+
+[33m## Hilfe zur Hilfe aufrufen:
+[31m help [0mhelp
+
