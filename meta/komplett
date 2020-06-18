@@ -4918,3 +4918,47 @@ dann wieder in den Vordergrund und beenden:
 [33m## In diesem Zusammenhang interessant:
 [31m curl [0mcli.help/bg
 [31m curl [0mcli.help/fg
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##               kill                    ##
+###########################################
+
+[33m## Alle kill-Signale auflisten:
+[31m kill [0m-l
+
+[33m## kill-Signal SIGTERM (Nummer 15) an Prozess-ID 33 schicken:
+[31m kill [0m-n15 33
+
+[33m## kill-Signal Nummer 15 (SIGTERM) an Prozess-ID 33 schicken:
+[31m kill [0m-sSIGTERM 33
+
+[33m## kill-Signal 2/SIGINT (Unterbrechung der Terminalverbindung)
+an den im Vordergrund laufenden Prozess senden:
+[31m STRG+C [0m
+
+[33m## Alles inklusive Terminal (-1) mit Signal 9/SIGKILL beenden:
+[31m kill [0m-9 -1
+
+[33m## kill-Signal USR1 (Funkion abhängig vom Zielprogramm) an einen
+dd-Prozess (PID ist 7454) senden, um den Status abzufragen:
+[31m kill [0m-sUSR1 7454
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/jobs
+[31m curl [0mcli.help/fg
