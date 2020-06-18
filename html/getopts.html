@@ -1,0 +1,18 @@
+<H1>getopts                 </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Skript "meinskript" mit Optionen wie<br>
+"meinskript -a" oder "meinskript -X foobar" ausstatten:<br>
+ while getopts abX:Y: opt<br>
+do<br>
+   case $opt in<br>
+       a) echo "Schalter a";;<br>
+       b) echo "Schalter b";;<br>
+       X) echo "Schalter X : ($OPTARG)";;<br>
+       Y) echo "Schalter Y : ($OPTARG)";;<br>
+   esac<br>
+done<br>
+<br>
+## Skript ausführen und "Schalter Y : (foobar)" ausgeben lassen:<br>
+ ./meinskript -Y foobar<br>
