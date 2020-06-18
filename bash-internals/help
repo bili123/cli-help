@@ -16,21 +16,24 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##                help                   ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Bash-interne Funktionen auflisten:
+[31m help [0m
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Hilfe zur Bash-internen Funktion eval aufrufen:
+[31m help [0meval
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Kurzversion der Hilfe zu eval:
+[31m help [0m-d eval
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## Hilfe zu eval im Pseudo-manpage-Format:
+[31m help [0m-d eval
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Aufrufsyntax zu eval:
+[31m help [0m-s eval
+
+[33m## Hilfe zur Hilfe aufrufen:
+[31m help [0mhelp
+

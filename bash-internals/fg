@@ -16,21 +16,23 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##                fg                     ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Letzten gestarteten Job im Hintergrund laufen lassen:
+[31m bg [0m
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Job "xeyes" in den Hintergrund versetzen - so, als wäre
+es per "xeyes &" gestartet worden:
+[31m bg [0mxeyes
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Workflow: Jobs auflisten, Job 2 (hier xeyes) in Hintergrund versetzen,
+dann wieder in den Vordergrund und beenden:
+[31m jobs [0m
+[31m bg [0m2
+[31m fg [0mxeyes
+[31m STRG+C [0m
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
-
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/bg
+[31m curl [0mcli.help/jobs

@@ -16,21 +16,29 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##               kill                    ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Alle kill-Signale auflisten:
+[31m kill [0m-l
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## kill-Signal SIGTERM (Nummer 15) an Prozess-ID 33 schicken:
+[31m kill [0m-n15 33
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## kill-Signal Nummer 15 (SIGTERM) an Prozess-ID 33 schicken:
+[31m kill [0m-sSIGTERM 33
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## kill-Signal 2/SIGINT (Unterbrechung der Terminalverbindung)
+an den im Vordergrund laufenden Prozess senden:
+[31m STRG+C [0m
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Alles inklusive Terminal (-1) mit Signal 9/SIGKILL beenden:
+[31m kill [0m-9 -1
+
+[33m## kill-Signal USR1 (Funkion abhängig vom Zielprogramm) an einen
+dd-Prozess (PID ist 7454) senden, um den Status abzufragen:
+[31m kill [0m-sUSR1 7454
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/jobs
+[31m curl [0mcli.help/fg

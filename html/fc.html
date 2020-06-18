@@ -1,0 +1,28 @@
+<H1>fc                     </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Das letzte Kommando im Editor öffnen, nach Speichern ausführen:<br>
+ fc <br>
+<br>
+## Letzen Befehl wiederholen:<br>
+ fc -s<br>
+<br>
+## Letzten Befehl wiederholen - aber jedes "foo" durch "bar" ersetzen:<br>
+ fc -s foo=bar<br>
+<br>
+## Letzen grep-Befehl wiederholen:<br>
+ fc -s grep<br>
+<br>
+## Befehl 111 aus der history wiederholen:<br>
+ fc -s 111<br>
+<br>
+## Befehl 111 aus der history bearbeiten:<br>
+ fc  111<br>
+<br>
+## Letzten Befehl wiederholen - aber nur das ERSTE foo durch bar ersetzen:<br>
+ ^foo^bar <br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/history<br>
+ curl cli.help/jobs<br>

@@ -16,21 +16,30 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##                fc                     ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Das letzte Kommando im Editor öffnen, nach Speichern ausführen:
+[31m fc [0m
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Letzen Befehl wiederholen:
+[31m fc [0m-s
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Letzten Befehl wiederholen - aber jedes "foo" durch "bar" ersetzen:
+[31m fc [0m-s foo=bar
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## Letzen grep-Befehl wiederholen:
+[31m fc [0m-s grep
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Befehl 111 aus der history wiederholen:
+[31m fc [0m-s 111
+
+[33m## Befehl 111 aus der history bearbeiten:
+[31m fc [0m 111
+
+[33m## Letzten Befehl wiederholen - aber nur das ERSTE foo durch bar ersetzen:
+[31m ^foo^bar [0m
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/history
+[31m curl [0mcli.help/jobs

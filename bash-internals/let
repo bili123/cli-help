@@ -16,21 +16,17 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##               let                     ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Variablen a das Ergebnis einer arithmetischen Operation zuweisen (13):
+[31m let [0ma=5+8
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Variablen a das Ergebnis einer arithmetischen Operation zuweisen (13):
+[0m a=$[31m(([0m 5 + 8 [31m))[0m
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Arithmetische Evaluation (aka Rechnung ...) als Bedingung verwenden:
+[0m if $([31mlet[0m 5+5==10); then echo Erfolg!; fi [0m
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
-
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Arithmetische Evaluation (aka Rechnung ...) als Bedignung verwenden:
+[0m if [31m(([0m 5 + 5 = 10 [31m))[0m; then echo Erfolg!; fi [0m

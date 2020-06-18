@@ -16,21 +16,36 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##              history                  ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## History nach echo durchsuchen:
+[31m history [0m| grep echo
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Befehl Nummer 305 aus der history wiederholen:
+[31m ![0m305
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## History-Liste ab Position 444 löschen:
+[31m history [0m-d 444
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## History-Datei (~/.bash_history) zur History-Liste
+der aktuellen Session hinzufügen:
+[31m history [0m-r
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## History-Liste der aktuellen Session zur
+History-Datei (~/.bash_history) hinzufügen:
+[31m history [0m-a
+
+[33m## History um den Eintrag "foo bar ey" erweitern:
+[31m history [0m-s foo bar ey
+
+[33m## echo-Befehle nicht mehr in der History speichern:
+[31m export [0mHISTIGNORE="echo"
+
+[33m## Direkt nacheinander eingegebene identische Befehle nur
+ein mal speichern (Duplikate ignorieren):
+[31m export [0mHISTCONTROL="ignoredups"
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/fc
+[31m curl [0mcli.help/export
