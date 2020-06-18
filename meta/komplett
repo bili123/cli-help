@@ -4962,3 +4962,35 @@ dd-Prozess (PID ist 7454) senden, um den Status abzufragen:
 [33m## In diesem Zusammenhang interessant:
 [31m curl [0mcli.help/jobs
 [31m curl [0mcli.help/fg
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##               let                     ##
+###########################################
+
+[33m## Variablen a das Ergebnis einer arithmetischen Operation zuweisen (13):
+[31m let [0ma=5+8
+
+[33m## Variablen a das Ergebnis einer arithmetischen Operation zuweisen (13):
+[0m a=$[31m(([0m 5 + 8 [31m))[0m
+
+[33m## Arithmetische Evaluation (aka Rechnung ...) als Bedingung verwenden:
+[0m if $([31mlet[0m 5+5==10); then echo Erfolg!; fi [0m
+
+[33m## Arithmetische Evaluation (aka Rechnung ...) als Bedignung verwenden:
+[0m if [31m(([0m 5 + 5 = 10 [31m))[0m; then echo Erfolg!; fi [0m
