@@ -5018,3 +5018,38 @@ Weitere Infos und alle Features: [92mcurl cli.help
 
 [33m## Arithmetische Evaluation (aka Rechnung ...) als Bedignung verwenden:
 [0m if [31m(([0m 5 + 5 = 10 [31m))[0m; then echo Erfolg!; fi [0m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##               local                   ##
+###########################################
+
+[33m## Variable a nur lokal in einer Funktion nutzen:
+[0m
+#!/bin/bash
+
+test ()
+{
+ [31m local[0m a=jochen
+ echo $a
+}
+
+test
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/declare
