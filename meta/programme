@@ -146,6 +146,7 @@ local
 logout
 declare
 mapfile
+printf
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:

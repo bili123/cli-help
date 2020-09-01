@@ -5155,3 +5155,57 @@ Delimiter (Kommas) entfernen (-t):
 [33m## In diesem Zusammenhang interessant:
 [31m curl [0mcli.help/array
 [31m curl [0mcli.help/declare
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##              printf                   ##
+###########################################
+
+[33m## "Hallo Welt" in Variable foobar schreiben:
+[31m printf [0m-v foobar "Hallo Welt"
+
+[33m## Hallo und Welt in je einer Zeile ausgeben:
+[31m printf [0m"Hallo\nWelt"
+
+[33m## Argument 1 ("Hallo" - Anführungszeichen mit \") und 
+Argument 2 (Welt - ohne Anführungszeichen!) als Strings (%s) ausgeben:
+[31m printf [0m"\n"%s\" %s" "Hallo" "Welt"
+
+[33m## Argumente und Text in Conversion String UND Argumenten mischen:
+[31m printf [0m"Jetzt kommt Arg1 %s und jetzt Arg2 %s" blablabla "Arg1-Text" blablabla "Arg2-Text" bla ;)
+
+[33m## Von Argument 1 nur die ersten drei Zeichen ausgeben (%.3s),
+Argument 2 mit Leerzeichen auf insgesamt 10 Zeichen auffüllen (%-10s):
+[31m printf [0m"\"%.3s\" \"%-10s\"" "Hallo" "Welt"
+
+[33m## Argument (9) als Fließkommazahl mit 5 Nachkommastellen ausgeben:
+[31m printf [0m"Fließkommazahl: %.5f" 9
+
+[33m## Argument (9) als Fließkommazahl mit 5 Nachkommastellen ausgeben:
+[31m printf [0m"Fließkommazahl: %.*f" 5 9
+
+[33m## Folgendes ausgeben: "Hallo UMBRUCH Welt TAB wie gehtss BACKSPACE heute?"
+(Das BACKSPACE löscht das zweite s bei gehtss.)
+[31m printf [0m"Hallo\nWelt\twie gehtss\b heute?"
+[33mAusgabe:[0m
+ Hallo
+ Welt    wie gehts heute?
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/echo
+[31m curl [0mcli.help/mapfile
