@@ -5259,3 +5259,55 @@ Weitere Infos und alle Features: [92mcurl cli.help
 
 [33m## Aktuelles Verzeichnis ausgeben:
 [31m echo [0m$PWD
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##                read                   ##
+###########################################
+
+[33m## Text foobar in Variable REPLY einlesen:
+[31m read [0mENTER foobar ENTER
+
+[33m## Text foobar in Variable meintext einlesen:
+[31m read [0mmeintext ENTER foobar ENTER
+
+[33m## Text (Zeile) interaktiv eingeben lassen:
+[31m read [0m-e meintext
+
+[33m## Interaktiv, mit vorgegebenem Text (-i):
+[31m read [0m-e -i "Ein foobar-Text" meintext
+
+[33m## Interaktiv 5 Zeichen einlesen:
+[31m read [0m-e -n5 meintext
+
+[33m## Interaktiv bis zum Delimiter ! einlesen:
+[31m read [0m-e -d! meintext
+
+[33m## (Skript-)Nutzer interaktiv Text eingeben lassen, dabei Prompt
+anzeigen (-p), keine \ erlauben (-r), nach 10 Sekunden abbrechen (-t):
+[31m read [0m-e -r -t10 meintext
+
+[33m## Mal praktisch ;)
+[31m read [0m-e -r -t5 -p"Wieviel ist 2+1?" -d3 meintext && echo "Korrekt, 3!"
+
+[33m## Wörter in ein Array einlesen und ausgeben:
+[0mecho "foobar quatschtkopp banane" | while [31mread[0m -a meinarray; do echo -e "${meinarray[1]}"; done
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/declare
+[31m curl [0mcli.help/array
