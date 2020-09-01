@@ -1,0 +1,23 @@
+<H1>mapfile                   </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Array MAPFILE aus kommaseparierter (-d,) Liste erstellen und<br>
+Delimiter (Kommas) entfernen (-t):<br>
+ mapfile  -d, -t < <(echo "eins,zwei,drei")<br>
+<br>
+## Array MAPFILE komplett ausgeben<br>
+ echo "${MAPFILE[@]}"<br>
+<br>
+## Array MAPFILE an Stelle 1 (zwei) ausgeben:<br>
+ echo "${MAPFILE[1]}"<br>
+<br>
+## Array MAPFILE aus Zeilen erstellen und Delimiter (Umbrüche) entfernen:<br>
+ mapfile  < <(echo -e "eins\nzwei\ndrei\n")<br>
+<br>
+## Array komplett ausgeben, als String (%s) plus Zeilenumbruch (\n):<br>
+ printf "%s\n" "${MAPFILE[@]}"<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/array<br>
+ curl cli.help/declare<br>
