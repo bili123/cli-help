@@ -153,6 +153,7 @@ read
 readarray
 readonly
 return
+set
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:
