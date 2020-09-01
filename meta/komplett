@@ -5401,3 +5401,79 @@ Weitere Infos und alle Features: [92mcurl cli.help
 
 [33m## In diesem Zusammenhang interessant:
 [31m curl [0mcli.help/shopt
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##               shift                   ##
+###########################################
+
+[33m## Beispielskript: Gibt Argument 1 als $1 - und shift
+macht dann Argument 2 zu $1 (Argument 1 wird verworfen). shift
+verwirft immer das erste Argument, alle anderen rücken nach, so
+dass jedes Argument nacheinander als $1 angesprochen werden kann:
+
+[33mSkript:[0m
+ while (( "$#" )); do
+ echo Argument ist: $1
+ [31mshift[0m
+ done
+ [33mAufruf:[0m
+ ./beispielskript.sh eins zwei drei
+ [33mAusgabe:[0m
+ Argument ist: eins
+ Argument ist: zwei
+ Argument ist: drei
+ 
+[33m## Beispielskript 2: Wie eben, aber es wird Argument 1 ausgegeben - und shift
+verwirft dann dieses und das nächste - Ausgabe ist daher:
+
+[33mSkript:[0m
+ while (( "$#" )); do
+ echo Argument ist: $1
+ [31mshift
+ shift[0m
+ done
+ [33mAufruf:[0m
+ ./beispielskript.sh eins zwei drei vier fünf
+ [33mAusgabe:[0m
+ Argument ist: eins
+ Argument ist: drei
+ Argument ist: fünf
+
+[33m## shift die ersten 5 Argumente verwerfen lassen.
+Vorsicht: Die Anzahl aller Argumente muss ein Vielfaches des hier
+angegebenen shift-Werts sein - sonst läuft $# nie leer und das letzte
+Argument wird endlos ausgegeben. 
+
+[33mSkript:[0m
+ while (( "$#" )); do
+ echo Argument ist: $1
+ [31mshift[0m 5
+ done
+ [33mAufruf 1:[0m
+ ./beispielskript.sh 1 2 3 4 5 6 7 8 9 10
+ [33mAusgabe:[0m
+ Argument ist: 1
+ Argument ist: 6
+ [33mAufruf 2:[0m
+ ./beispielskript.sh 1 2 3 4 5 6 7 8 9 10 11
+ [33mAusgabe:[0m
+ Argument ist: 1
+ Argument ist: 6
+ Argument ist: 11 --> Endlosschleife
+ 
