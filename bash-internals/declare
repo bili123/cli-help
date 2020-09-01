@@ -54,5 +54,5 @@ in der Form "berlin : brd":
  for i in {1..5}; do echo ${tage[$i]}; done
 
 [33m## In diesem Zusammenhang interessant:
-[31m curl [0mcli.help/loops
+[31m curl [0mcli.help/mapfile
 [31m curl [0mcli.help/local

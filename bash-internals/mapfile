@@ -16,21 +16,25 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##             mapfile                   ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Array MAPFILE aus kommaseparierter (-d,) Liste erstellen und
+Delimiter (Kommas) entfernen (-t):
+[31m mapfile [0m -d, -t < <(echo "eins,zwei,drei")
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Array MAPFILE komplett ausgeben
+[31m echo [0m"${MAPFILE[@]}"
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Array MAPFILE an Stelle 1 (zwei) ausgeben:
+[31m echo [0m"${MAPFILE[1]}"
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## Array MAPFILE aus Zeilen erstellen und Delimiter (Umbrüche) entfernen:
+[31m mapfile [0m < <(echo -e "eins\nzwei\ndrei\n")
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Array komplett ausgeben, als String (%s) plus Zeilenumbruch (\n):
+[31m printf [0m"%s\n" "${MAPFILE[@]}"
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/array
+[31m curl [0mcli.help/declare

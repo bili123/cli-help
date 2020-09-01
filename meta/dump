@@ -5081,3 +5081,61 @@ Weitere Infos und alle Features: [92mcurl cli.help
 [31m exit [0m
 
 [33mTja, was soll man mehr dazu sagen? [31m;)[0m
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##               declare                 ##
+###########################################
+
+[33m## Variable meine_var anlegen und mit dem Wert 11 belegen - identische Varianten:
+[31m declare [0mmeine_var=11
+[31m declare [0mmeine_var="11"
+[31m declare [0m-- meine_var=11
+ meine_var=11
+
+[33m## Variable mit Nur-Lesen-Attribut anlegen:
+[31m declare [0m-r meine_var="Hallo Welt"
+
+[33m## Variable als Integer (-i) deklarieren und Berechnung durchführen
+(Ausgabe wird 4, ohne -i wäre es der String "2+2"):
+[31m declare [0m-i meine_var="2+2"
+
+[33m## Integer-Deklaration aus obigem Beispiel entfernen:
+[31m declare [0m+i meine_var
+
+[33m## Assoziatives Array cities mit Großstädten als Schlüsseln und Ländern als Werten
+anlegen; anschließend das Land, das zur Stadt Berlin gehört ausgeben:
+[31m declare [0m-A cities ( [berlin]=brd [hamburg]=brd [paris]=fra )
+ echo ${cities[berlin]}
+ 
+[33m## Obiges Array: Alle Schlüssel ausgeben, alle Werte ausgeben, ganzes Array ausgeben,
+in der Form "berlin : brd":
+ [0mfor i in "${!cities[@]}"; do echo $i; done
+ for i in "${cities[@]}"; do echo $i; done
+ for i in "${!cities[@]}"; do echo $i : ${cities[$i]}; done
+
+[33m## Schlüssel berlin aus obigem Beispiel löschen:
+[31m unset [0mcities[berlin]
+
+[33m## Indexiertes Array mit Wochentagen anlegen, dann Arbeitstage ausgeben:
+[31m declare [0m tage=( [1]=Montag [2]=Dienstag [3]=Mittwoch [4]=Donnerstag [5]=Freitag [6]=Samstag [7]=Sonntag )
+ for i in {1..5}; do echo ${tage[$i]}; done
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/mapfile
+[31m curl [0mcli.help/local

@@ -16,21 +16,61 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##               shift                   ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Beispielskript: Gibt Argument 1 als $1 - und shift
+macht dann Argument 2 zu $1 (Argument 1 wird verworfen). shift
+verwirft immer das erste Argument, alle anderen rücken nach, so
+dass jedes Argument nacheinander als $1 angesprochen werden kann:
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33mSkript:[0m
+ while (( "$#" )); do
+ echo Argument ist: $1
+ [31mshift[0m
+ done
+ [33mAufruf:[0m
+ ./beispielskript.sh eins zwei drei
+ [33mAusgabe:[0m
+ Argument ist: eins
+ Argument ist: zwei
+ Argument ist: drei
+ 
+[33m## Beispielskript 2: Wie eben, aber es wird Argument 1 ausgegeben - und shift
+verwirft dann dieses und das nächste - Ausgabe ist daher:
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33mSkript:[0m
+ while (( "$#" )); do
+ echo Argument ist: $1
+ [31mshift
+ shift[0m
+ done
+ [33mAufruf:[0m
+ ./beispielskript.sh eins zwei drei vier fünf
+ [33mAusgabe:[0m
+ Argument ist: eins
+ Argument ist: drei
+ Argument ist: fünf
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## shift die ersten 5 Argumente verwerfen lassen.
+Vorsicht: Die Anzahl aller Argumente muss ein Vielfaches des hier
+angegebenen shift-Werts sein - sonst läuft $# nie leer und das letzte
+Argument wird endlos ausgegeben. 
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33mSkript:[0m
+ while (( "$#" )); do
+ echo Argument ist: $1
+ [31mshift[0m 5
+ done
+ [33mAufruf 1:[0m
+ ./beispielskript.sh 1 2 3 4 5 6 7 8 9 10
+ [33mAusgabe:[0m
+ Argument ist: 1
+ Argument ist: 6
+ [33mAufruf 2:[0m
+ ./beispielskript.sh 1 2 3 4 5 6 7 8 9 10 11
+ [33mAusgabe:[0m
+ Argument ist: 1
+ Argument ist: 6
+ Argument ist: 11 --> Endlosschleife
+ 

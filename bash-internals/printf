@@ -16,21 +16,39 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##              printf                   ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## "Hallo Welt" in Variable foobar schreiben:
+[31m printf [0m-v foobar "Hallo Welt"
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Hallo und Welt in je einer Zeile ausgeben:
+[31m printf [0m"Hallo\nWelt"
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Argument 1 ("Hallo" - Anführungszeichen mit \") und 
+Argument 2 (Welt - ohne Anführungszeichen!) als Strings (%s) ausgeben:
+[31m printf [0m"\n"%s\" %s" "Hallo" "Welt"
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## Argumente und Text in Conversion String UND Argumenten mischen:
+[31m printf [0m"Jetzt kommt Arg1 %s und jetzt Arg2 %s" blablabla "Arg1-Text" blablabla "Arg2-Text" bla ;)
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Von Argument 1 nur die ersten drei Zeichen ausgeben (%.3s),
+Argument 2 mit Leerzeichen auf insgesamt 10 Zeichen auffüllen (%-10s):
+[31m printf [0m"\"%.3s\" \"%-10s\"" "Hallo" "Welt"
+
+[33m## Argument (9) als Fließkommazahl mit 5 Nachkommastellen ausgeben:
+[31m printf [0m"Fließkommazahl: %.5f" 9
+
+[33m## Argument (9) als Fließkommazahl mit 5 Nachkommastellen ausgeben:
+[31m printf [0m"Fließkommazahl: %.*f" 5 9
+
+[33m## Folgendes ausgeben: "Hallo UMBRUCH Welt TAB wie gehtss BACKSPACE heute?"
+(Das BACKSPACE löscht das zweite s bei gehtss.)
+[31m printf [0m"Hallo\nWelt\twie gehtss\b heute?"
+[33mAusgabe:[0m
+ Hallo
+ Welt    wie gehts heute?
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/echo
+[31m curl [0mcli.help/mapfile
