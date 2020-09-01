@@ -5310,3 +5310,32 @@ Weitere Infos und alle Features: [92mcurl cli.help
 
 [33m## Synonym für mapfile:
 [31m curl [0mcli.help/mapfile
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##               readonly                ##
+###########################################
+
+[33m## Nur lesbare Variable mit Scope "global" deklarieren:
+[31m readonly [0mmeine_var="Hallo Welt"
+
+[33m## Nur lesbare (r) Variable mit Scope "global" (g) deklarieren:
+[31m declare [0m-gr meine_var="Hallo Welt"
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/declare
