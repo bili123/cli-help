@@ -5591,3 +5591,37 @@ Weitere Infos und alle Features: [92mcurl cli.help
 
 [33m## In diesem Zusammenhang interessant:
 [31m curl [0mcli.help/let
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##              times                    ##
+###########################################
+
+[33m## Zeitverbrauch anzeigen: 
+[31m times [0m
+
+[33m## HILFE benötigt!
+[0mDas Kommando verhält sich häufig komisch bis falsch, zudem
+lassen sich nirgends Infos über den (sinnvollen) Gebrauch finden - und
+nach so einem Wort zu googlen ist zum Kotzen ...
+
+Wenn jemand Infos zu dem Mistding hat, bitte her damit - Danke! 
+github.com/bili123/cli-help
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/time
