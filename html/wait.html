@@ -1,0 +1,23 @@
+<H1>wait                   </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Warten, bis Job Nr. 2 fertig ist, dann echo ausführen:<br>
+ wait %2; echo "Das Ende"<br>
+<br>
+## Skriptchen:<br>
+ 1. "Anfang" ausgeben.<br>
+ 2. ping ausführen und dessen Job-Nummer in $pid speichern.<br>
+ 3. Warten bis Job Nr. $pid beendet ist.<br>
+ 4. "Ende" ausgeben.<br>
+ echo Anfang<br>
+ ping tutonaut.de & pid=$!<br>
+ wait $pid<br>
+ echo Ende<br>
+<br>
+## Nach Ping-Befehl "Ende" ausgeben - egal, ob ping erfolgreich<br>
+war oder nicht:<br>
+ ping tutonaut.de & pid=$!; wait $pid; echo Ende<br>
+<br>
+## Wie oben, aber nur bei Erfolg Ende ausgeben:<br>
+ ping tutonaut.de && echo Ende<br>
