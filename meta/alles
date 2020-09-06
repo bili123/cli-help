@@ -5683,3 +5683,26 @@ Aliassen, Builtins und Funktionen:
 [33m## Nur Typ (alias, keyword, function, builtin, file)
 dessen was ausgeführt wird anzeigen:
 [31m type [0m-t echo
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##                typeset                ##
+###########################################
+
+[33m## Synonym für declare, daher:
+[31m curl [0mcli.help/declare
