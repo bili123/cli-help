@@ -16,21 +16,19 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##              times                    ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Zeitverbrauch anzeigen: 
+[31m times [0m
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## HILFE benötigt!
+[0mDas Kommando verhält sich häufig komisch bis falsch, zudem
+lassen sich nirgends Infos über den (sinnvollen) Gebrauch finden - und
+nach so einem Wort zu googlen ist zum Kotzen ...
 
-[33m## GELB
-[31m ROT [0mWEIß
+Wenn jemand Infos zu dem Mistding hat, bitte her damit - Danke! 
+github.com/bili123/cli-help
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
-
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/time

@@ -1,37 +1,36 @@
-<H1>test                       </H1>
+<H1>test                 </H1>
 cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
 <br>
 <br>
-## Testen, ob datei.txt existiert (Rückgabe: TRUE):<br>
- test datei.txt<br>
+## Testen, ob Datei foobar existiert:<br>
+ test -e foobar<br>
 <br>
-## Testen, ob datei.txt existiert - andere Notation:<br>
- [[ datei.txt ]]<br>
+## Testen, ob Datei foobar nicht existiert:<br>
+ test ! -e foobar<br>
 <br>
-## Testen, ob Fotos existiert und ein Verzeichnis ist:<br>
- test -d Fotos<br>
+## Testen, ob Datei foo älter ist als Datei bar:<br>
+ test foo -ot bar<br>
 <br>
-## Testen, ob datei.txt UND foobar existieren:<br>
- test datei.txt -a foobar<br>
+## Testen, ob String/Variable meinevar nicht leer:<br>
+ test -n "$meinevar"<br>
 <br>
-## Testen, ob datei.txt ODER foobar existiert:<br>
- test datei.txt -o foobar<br>
+## Testen, ob Variable meinevar ungleich hallo ist:<br>
+ test "$meinevar" != "hallo"<br>
 <br>
-## test in einer if-Abfrage benutzen:<br>
-if $(test datei.txt); then echo "Datei gibt es."; else echo "Datei gibt es nicht"; fi<br>
+## Testen, ob Integer/Zahl größer oder gleich 5 ist:<br>
+ test $a -gt 5<br>
 <br>
-## test in if-Abfrage, aber mit eckigen Klammern:<br>
-if [[ datei.txt ]]; then echo "Datei gibt es."; else echo "Datei gibt es nicht"; fi<br>
+## Testen, ob Zahl a größer 5 UND String b existent ist:<br>
+ test $a -gt 5 && test -n "$b"<br>
 <br>
-## Testen, ob 8 kleiner als 9 ist:<br>
- [[ 8 -lt 9 ]]<br>
+## Testen, ob Zahl a größer 5 ODER String b existent ist:<br>
+ test $a -gt 5 || test -n "$b"<br>
 <br>
-## Testen, ob der String "foobar" IRGENDWO im Text von datei.txt vorkommt: <br>
-if [[ $(cat datei.txt) = *foobar* ]]; then echo "Ist enthalten."; else echo "Ist nicht enthalten"; fi<br>
+## Verwendung als If-Then-Else-Statement:<br>
+ test $a -gt 5 && echo Ja || echo Nein<br>
 <br>
-## Testen, ob der String "foobar" AM ZEILENANFANG im Text von datei.txt vorkommt: <br>
-if [[ $(cat datei.txt) = foobar* ]]; then echo "Ist enthalten."; else echo "Ist nicht enthalten"; fi<br>
+## Wie oben, aber in symbolischer Schreibweise mit []:<br>
+ if [ $a -gt 5 ]; then echo Ja, else echo Nein; fi<br>
 <br>
 ## In diesem Zusammenhang interessant:<br>
- curl cli.help/true<br>
- curl cli.help/false<br>
+ curl cli.help/let<br>

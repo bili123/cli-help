@@ -16,21 +16,25 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##                wait                   ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Warten, bis Job Nr. 2 fertig ist, dann echo ausführen:
+[31m wait [0m%2; echo "Das Ende"
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Skriptchen:
+ 1. "Anfang" ausgeben.
+ 2. ping ausführen und dessen Job-Nummer in $pid speichern.
+ 3. Warten bis Job Nr. $pid beendet ist.
+ 4. "Ende" ausgeben.
+ [0mecho Anfang
+ ping tutonaut.de & pid=$!
+ [31mwait[0m $pid
+ echo Ende
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Nach Ping-Befehl "Ende" ausgeben - egal, ob ping erfolgreich
+war oder nicht:
+ [0mping tutonaut.de & pid=$!; [31mwait[0m $pid; echo Ende
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
-
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Wie oben, aber nur bei Erfolg Ende ausgeben:
+ [0mping tutonaut.de [31m&&[0m echo Ende

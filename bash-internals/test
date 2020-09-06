@@ -16,21 +16,38 @@
 Weitere Infos und alle Features: [92mcurl cli.help
 [31m
 ###########################################
-## AB HIER bearbeiten! cheatsheet_KÜRZEL ##
+##                  test                 ##
 ###########################################
 
-[33m## Beschreibender Text ...
-[31m KOMMANDO [0mOPTIONEN
+[33m## Testen, ob Datei foobar existiert:
+[31m test [0m-e foobar
 
-[33m## Beispiel: Alle txt-Dateien samt Anzahl der Wörter auflisten:
-[31m wc [0m-w ~/ordner/*.txt
+[33m## Testen, ob Datei foobar nicht existiert:
+[31m test [0m! -e foobar
 
-[33m## GELB
-[31m ROT [0mWEIß
+[33m## Testen, ob Datei foo älter ist als Datei bar:
+[31m test [0mfoo -ot bar
 
-[33m Info: Den Kopfbereich bitte beibehalten und die grundsätzliche Farbgebung auch,
-da schließlich alle Seiten öffentlich sind: Beschreibung in GELB, Befehl(e) in ROT und
-Optionen, Pipes und dergleichen in WEIß. 
+[33m## Testen, ob String/Variable meinevar nicht leer:
+[31m test [0m-n "$meinevar"
 
-Im Übrigen wird hier mit ANSI-Escape-Sequenzen gearbeitet - mehr dazu unter:
-https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/
+[33m## Testen, ob Variable meinevar ungleich hallo ist:
+[31m test [0m"$meinevar" != "hallo"
+
+[33m## Testen, ob Integer/Zahl größer oder gleich 5 ist:
+[31m test [0m$a -gt 5
+
+[33m## Testen, ob Zahl a größer 5 UND String b existent ist:
+[31m test [0m$a -gt 5 && test -n "$b"
+
+[33m## Testen, ob Zahl a größer 5 ODER String b existent ist:
+[31m test [0m$a -gt 5 || test -n "$b"
+
+[33m## Verwendung als If-Then-Else-Statement:
+[31m test [0m$a -gt 5 && echo Ja || echo Nein
+
+[33m## Wie oben, aber in symbolischer Schreibweise mit []:
+[0m if [31m[[0m $a -gt 5[31m ][0m; then echo Ja, else echo Nein; fi
+
+[33m## In diesem Zusammenhang interessant:
+[31m curl [0mcli.help/let
