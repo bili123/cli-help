@@ -1,0 +1,10 @@
+<H1>trap                  </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## In Skripten: Beenden per STRG+C (SIGINT) und per kill-Kommando<br>
+ohne Signalangabe (SIGTERM) verhindern und stattdessen Warnung ausgeben:<br>
+ trap "echo Nein, nein, nein, böser User." SIGINT SIGTERM<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/kill<br>
