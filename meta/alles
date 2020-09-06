@@ -5733,3 +5733,30 @@ Weitere Infos und alle Features: [92mcurl cli.help
 [33m## Virtuellen Speicher der aktuellen Shell limitieren und dem
 User den ganzen Tag versauen:
 [31m ulimit [0m-v 1
+[32m
+       Hilfe im Terminal, auf Deutsch.     
+ _____      _                          _   
+|_   _|   _| |_ ___  _ __   __ _ _   _| |_ 
+  | || | | | __/ _ \| '_ \ / _` | | | | __|
+  | || |_| | || (_) | | | | (_| | |_| | |_ 
+  |_| \__,_|\__\___/|_| |_|\__,_|\__,_|\__|
+
+         curl cli.help/[31mSCHLAGWORT
+[31m
+###########################################
+##            Über cli.help              ##
+###########################################
+
+[92mcli.help[0m ist ein Projekt von Tutonaut.de.
+Weitere Infos und alle Features: [92mcurl cli.help
+[31m
+###########################################
+##                 umask                 ##
+###########################################
+
+[33m## Ordner per mkdir nicht mit Standardrechten 755 (umask -> 022),
+sondern mit 777 (umask -> 000) erstellen:
+[31m umask [0m000
+
+[33m## Rechte für Dateierstellung von 777 auf 333 setzen (7 minus 4):
+[31m umask [0m444

@@ -1,0 +1,10 @@
+<H1>umask                 </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Ordner per mkdir nicht mit Standardrechten 755 (umask -> 022),<br>
+sondern mit 777 (umask -> 000) erstellen:<br>
+ umask 000<br>
+<br>
+## Rechte für Dateierstellung von 777 auf 333 setzen (7 minus 4):<br>
+ umask 444<br>

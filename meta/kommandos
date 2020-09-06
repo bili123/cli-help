@@ -163,6 +163,7 @@ trap
 type
 typeset
 ulimit
+umask
 [33m## Ende der Schlagwörter
 
 ## Um Seiten Stück für Stück zu sehen:
