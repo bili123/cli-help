@@ -2,6 +2,8 @@
 ### [Ein Projekt](https://www.tutonaut.de/neues-projekt-cli-help-praktische-hilfe-im-terminal-auf-deutsch) von [Tutonaut.de](https://www.tutonaut.de)
 cli.help liefert Hilfe zu Command-Line-Interface-Werkzeugen, sprich Tools im Termnial. **Auf Deutsch, direkt im Terminal und ohne Client.** Inhaltlich gibt es nicht bloß die abstrakten Beschreibungen der Tool-eigenen Hilfen, sondern **echte Aufrufe** mit konkreten Dateinamen, Pfaden und Kombinationen von Optionen. Wo es sich anbietet gibt es zudem **typische Pipes** oder Hinweise zur Verwendung in **Schleifen und Abfragen.** 
 
+just-a-test-change
+
 cli.help liefert zudem aber auch **Übersichten:** Typische Aufgaben der Nutzerverwaltung, Tools für Systeminformationen, die wichtigsten Vorgehensweisen bei der Textverarbeitung, Seiten über Networking, Systemupdates, Paketmanagement, nützliche Alias und so weiter. 
 
 Und drittens könnt Ihr auch **Eure eigenen Cheatsheets,** aka Spickzettel einreichen.
