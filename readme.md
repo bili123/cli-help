@@ -4,7 +4,7 @@ cli.help liefert Hilfe zu Command-Line-Interface-Werkzeugen, sprich Tools im Ter
 
 cli.help liefert zudem aber auch **Übersichten:** Typische Aufgaben der Nutzerverwaltung, Tools für Systeminformationen, die wichtigsten Vorgehensweisen bei der Textverarbeitung, Seiten über Networking, Systemupdates, Paketmanagement, nützliche Alias und so weiter.
 
-Und drittens könnt Ihr auch **Eure eigenen Cheatsheets,** aka Spickzettel einreichen.  
+Und drittens könnt Ihr auch **Eure eigenen Cheatsheets,** aka Spickzettel einreichen.
 
 Und hier mal eine fertige Hilfeseite für das Programm **tee:**
 
