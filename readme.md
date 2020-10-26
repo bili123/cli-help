@@ -70,7 +70,7 @@ Und wenn Ihr helfen wollt, aber nicht wisst, wie Github funktioniert, was ein Pu
 ## Lizenz
 Sämtliche Inhalte hier im Repo stehen unter Creative-Commons-Lizenz [CC-BY-SA.](https://creativecommons.org/licenses/by-sa/4.0/) Das heißt: Ihr könnt sie nach belieben verwenden, verändern und unter gleichen Bedingungen und Nennung des Original-Autors weitergeben. Eigene Änderungen müssen zudem kenntlich gemacht beziehungsweise erwähnt werden.
 
-In der Praxis heißt das: Ihr könnt beispielsweise dieses Repository klonen, in meinegeilenhilfeseiten.de 2.0 umbenennen, Inhalte ändern und hinzufügen und Nutzern zur Verfügung stellen - auch in kommerziellen Umgebungen. In diesem Fall müsstet Ihr cli.help als Ursprungsprojekt nennen/verlinken und ebenso alles unter die CC-BY-SA-Lizenz stellen. Und Eure eigenen Änderungen könntet Ihr zum Beispiel in der Readme-Datei notieren. 
+In der Praxis heißt das: Ihr könnt beispielsweise dieses Repository klonen, in meinegeilenhilfeseiten.de 3.0 umbenennen, Inhalte ändern und hinzufügen und Nutzern zur Verfügung stellen - auch in kommerziellen Umgebungen. In diesem Fall müsstet Ihr cli.help als Ursprungsprojekt nennen/verlinken und ebenso alles unter die CC-BY-SA-Lizenz stellen. Und Eure eigenen Änderungen könntet Ihr zum Beispiel in der Readme-Datei notieren. 
 
 Und wenn jemand aus irgendwelchen Gründen Inhalte in ein Projekt mit inkompatibler Lizenz übernehmen will: Einfach kurz melden - ich bin zwar durchaus Copyleft-Fan, aber die Vorteile permissiver Lizenzen sehe ich durchaus :neckbeard:
 
