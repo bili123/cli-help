@@ -62,6 +62,13 @@ Passt dazu einfach die Vorlage-Datei (cheatsheet_vorlage) an und reicht sie ein:
 
 Der Kopfbereich aus der Vorlage bleibt wie er ist, also Titel und über-cli.help-Bereich. Den Rest könnt Ihr gerne anders gestalten. Wie genau das geht, habe ich in einen [ausführlicheren Artikel](https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/) gepackt.
 
+## Beta-Funktion
+Experimentell gibt es derzeit eine Beta-Funktion: Ihr könnt ein Skript aufrufen, das Systeminformationen über Kernel, Distri, Speicherplatz und so weiter liefert - der Aufruf:
+
+    curl cli.help/version | sh
+
+Zumindest unter Debian, Ubuntu und deren Derivaten sollte das Skript laufen - falls nicht, sagt Bescheid.
+
 ## Mitmachen!
 Mitmachen ist hier wirklich mal einfach: Erstellt eigene Hilfeseiten mit der Vorlage, verbessert, korrigiert oder ergänzt vorhandene Seiten - oder empfehlt cli.help weiter, das hilft auf Dauer am meisten. **Oder stellt Fragen!** Wer weiß schon, was Ihr alles mit den CLI-Werkzeugen anstellt ...
 
