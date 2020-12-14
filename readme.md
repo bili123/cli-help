@@ -1,4 +1,4 @@
-# cli.help - Beta!
+# cli.help
 ### [Ein Projekt](https://www.tutonaut.de/neues-projekt-cli-help-praktische-hilfe-im-terminal-auf-deutsch) von [Tutonaut.de](https://www.tutonaut.de)
 cli.help liefert Hilfe zu Command-Line-Interface-Werkzeugen, sprich Tools im Termnial. **Auf Deutsch, direkt im Terminal und ohne Client.** Inhaltlich gibt es nicht bloß die abstrakten Beschreibungen der Tool-eigenen Hilfen, sondern **echte Aufrufe** mit konkreten Dateinamen, Pfaden und Kombinationen von Optionen. Wo es sich anbietet gibt es zudem **typische Pipes** oder Hinweise zur Verwendung in **Schleifen und Abfragen.**
 
@@ -61,6 +61,13 @@ Ihr könnt gerne Eure eigene Hilfe, einen Spickzettel oder ähnliche Dinge erste
 Passt dazu einfach die Vorlage-Datei (cheatsheet_vorlage) an und reicht sie ein: Via Mail, als Pull Request [(und zwar so)](https://www.tutonaut.de/aenderungen-in-github-projekten-einreichen/) oder wie auch immer. Die Inhalte sind natürlich **öffentlich.** Ich prüfe, ob die Formatierung passt, ansonsten könnt Ihr da rein schreiben was Ihr wollt.
 
 Der Kopfbereich aus der Vorlage bleibt wie er ist, also Titel und über-cli.help-Bereich. Den Rest könnt Ihr gerne anders gestalten. Wie genau das geht, habe ich in einen [ausführlicheren Artikel](https://www.tutonaut.de/anleitung-terminal-ausgabe-mit-farben-und-ascii-art-aufhuebschen/) gepackt.
+
+## Beta-Funktion
+Experimentell gibt es derzeit eine Beta-Funktion: Ihr könnt ein Skript aufrufen, das Systeminformationen über Kernel, Distri, Speicherplatz und so weiter liefert - der Aufruf:
+
+    curl cli.help/version | sh
+
+Zumindest unter Debian, Ubuntu und deren Derivaten sollte das Skript laufen - falls nicht, sagt Bescheid.
 
 ## Mitmachen!
 Mitmachen ist hier wirklich mal einfach: Erstellt eigene Hilfeseiten mit der Vorlage, verbessert, korrigiert oder ergänzt vorhandene Seiten - oder empfehlt cli.help weiter, das hilft auf Dauer am meisten. **Oder stellt Fragen!** Wer weiß schon, was Ihr alles mit den CLI-Werkzeugen anstellt ...
