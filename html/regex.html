@@ -1,0 +1,125 @@
+<H1>regex                </H1>
+cli.help ist für den Terminal gedacht:<br><i>curl cli.help</i><br>
+<br>
+<br>
+## Übersicht WICHTIGER RegEx-Anweisungen. Je nachdem<br>
+wo sie genutzt werden, kann die Syntax leicht abweichen, <br>
+da PHP, Perl und andere Tools eigene Dialekte verwenden.<br>
+<br>
+Üblich sind neben "normalen" Ausdrücken auch<br>
+POSIX-/erweiterte Varianten, etwa [:lower:] statt [a-z] -<br>
+einige werden hier mit aufgeführt.<br>
+Hier drei mal das Gleiche:<br>
+<br>
+ [:word:]     Ganzes Wort<br>
+ \w           Ganzes Wort<br>
+ [[:alnum:]_] Ganzes Wort - in der Praxis immer doppelte Klammern,<br>
+                            da mehrere Klassen kombiniert werden können.<br>
+<br>
+Im Zweifelsfall schaut bei regex101.com vorbei.<br>
+<br>
+Beispiele folgen unten.<br>
+<br>
+## Top 10<br>
+ .             Beliebiges Zeichen<br>
+ *             0 oder mehr<br>
+ 'a|b'         a ODER b<br>
+ \n            Zeilenumbruch<br>
+ \t            Tab<br>
+ \d            Ziffern - als POSIX-Variante: [:digit:]<br>
+ ^             Anfang der Zeile<br>
+ $             Ende der Zeile<br>
+ (hallo)(welt) hallo als Matchgruppe $1, welt als $2<br>
+ \QIch\.*bin\E Wörtlich: "Ich\.*bin"<br>
+<br>
+## Anker<br>
+ ^             Anfang der Zeile<br>
+ $             Ende der Zeile<br>
+ \b            Ganzes Wort<br>
+ \<            Wortanfang<br>
+ \>            Wortende<br>
+<br>
+## Zeichenklassen<br>
+ \s            Whitespace<br>
+ [:space:]     Whitespace<br>
+ \S            Nicht-Whitespace<br>
+ \d            Ziffer<br>
+ \D            Keine Ziffer<br>
+ \w            Ganzes Wort<br>
+ \W            Kein Wort<br>
+ [A-Z]         Großbuchstaben<br>
+ [:upper:]     Großbuchstaben<br>
+ [a-z]         Kleinbuchstaben<br>
+ [:lower:]     Kleinbuchstaben<br>
+ [:alpha:]     Groß- und Kleinbuchstaben<br>
+ [A-Za-z]      Groß- und Kleinbuchstaben<br>
+ [0-9]         Ziffern<br>
+ [:digit:]     Ziffern<br>
+ [0-9A-Za-z]   Ziffern und Buchstaben<br>
+ [:alnum:]     Ziffern und Buchstaben<br>
+ [ \t]         Space und TAB<br>
+ [:blank:]     Space und TAB<br>
+<br>
+## Quantifizierer<br>
+ *             0 oder mehr<br>
+ +             1 oder mehr<br>
+ ?             0 oder 1<br>
+ {4}           4<br>
+ {4,}          4 oder mehr<br>
+ {4,7}         4 bis 7<br>
+<br>
+## Sonderzeichen<br>
+ \n            New-Line-Zeilenumbruch<br>
+ \r            Carriage-return-Zeilenumbruch<br>
+ \t            Tab<br>
+ \v            Vertikaler Tab<br>
+<br>
+## Lookarounds, Conditionals<br>
+ (?!)          Negative Lookahead<br>
+ (?<!)         Negative Lookbehind<br>
+ (?=)          Positive Lookahead<br>
+ (?<=)         Positive Lookbehind<br>
+ (?(?<=if.)then|else) Matcht THEN nach "if " und ELSE nach allem außer "if ".<br>
+ (if.)?(?(1)then|else) Matcht IF THEN oder ELSE<br>
+## Ja, der Abschnitt ist verwirrend ;)<br>
+<br>
+## Beispiele mit grep und sed<br>
+Je nach Tool sehen die RegExes anders aus - und selbst<br>
+einzelne Tools funktionieren teils je nach Version leicht<br>
+bis deutlich unterschiedlich ... ist leider so.<br>
+<br>
+## Suche nach "foo oder bar" - Standard und Perl (-P):<br>
+ grep -e 'foo\|bar'<br>
+ grep -eP 'foo|bar'<br>
+<br>
+## Suche nach foo ohne Bindestrich davor/danach:<br>
+ grep -eP '(?<!-)foo(?!-)'<br>
+<br>
+## Suche nach IPs wie 192.168.77.1:<br>
+ grep -e '(\d{1,3}\.){3}\d{1,3}'<br>
+<br>
+## sed: you durch me ersetzen - normal, POSIX-/erweiterte Variante (-E):<br>
+echo fuck you | sed 's/\(.*\)\(you\)/\1 me/'<br>
+echo fuck you | sed -E 's/(.*)(you)/\1 me/'<br>
+<br>
+## In diesem Zusammenhang interessant:<br>
+ curl cli.help/sed<br>
+ curl cli.help/grep<br>
+Ausführlich: tutonaut.de/regulaere-ausdruecke-retten-das-jahr-2302/<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
