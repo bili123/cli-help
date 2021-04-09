@@ -123,20 +123,3 @@ echo fuck you | [31msed[0m -E 's/(.*)(you)/\1 me/'
 [31m curl [0mcli.help/sed
 [31m curl [0mcli.help/grep
 Ausführlich: tutonaut.de/regulaere-ausdruecke-retten-das-jahr-2302/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
