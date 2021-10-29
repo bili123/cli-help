@@ -1,20 +1,33 @@
-    msgid “text1”
-    msgstr “Hallo Welt!”
-    
-    msgid “test_greeting”
-    msgstr “Hallo Nutzer.”
-    
-    msgid “test_bye”
-    msgstr “Auf Wiedersehen.”
-    
-    
-    msgid “test_error”
-    msgstr “Das ist ein Fehler.”
-    
-    
-    msgid “test_really”
-    msgstr “Bis Du sicher?”
-    
-    
-    msgid “test_foobar”
-    msgstr “Das ist ein Fall für foobar.”
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Testing POE\n"
+"Language: de\n"
+
+#: 
+msgid "“text1”"
+msgstr ""
+
+#: 
+msgid "“test_greeting”"
+msgstr ""
+
+#: 
+msgid "“test_bye”"
+msgstr ""
+
+#: 
+msgid "“test_error”"
+msgstr ""
+
+#: 
+msgid "“test_really”"
+msgstr ""
+
+#: 
+msgid "“test_foobar”"
+msgstr ""
+
