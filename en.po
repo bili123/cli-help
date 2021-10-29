@@ -1,1 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Testing\n"
+"Language: en\n"
+
+#: 
+msgid "“text1”"
+msgstr "Text 1"
+
+#. Maybe just "Welcome"
+#: 
+#, fuzzy
+msgid "“test_greeting”"
+msgstr "A warm welcome"
+
+#: 
+msgid "“test_bye”"
+msgstr "Goodbye."
+
+#: 
+msgid "“test_error”"
+msgstr "This is a mistake"
+
+#: 
+msgid "“test_really”"
+msgstr "Really?"
+
+#: 
+msgid "“test_foobar”"
+msgstr "A case for foobar"
 
