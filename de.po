@@ -1,0 +1,20 @@
+    msgid “text1”
+    msgstr “Hallo Welt!”
+    
+    msgid “test_greeting”
+    msgstr “Hallo Nutzer.”
+    
+    msgid “test_bye”
+    msgstr “Auf Wiedersehen.”
+    
+    
+    msgid “test_error”
+    msgstr “Das ist ein Fehler.”
+    
+    
+    msgid “test_really”
+    msgstr “Bis Du sicher?”
+    
+    
+    msgid “test_foobar”
+    msgstr “Das ist ein Fall für foobar.”
