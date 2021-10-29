@@ -9,25 +9,25 @@ msgstr ""
 
 #: 
 msgid "“text1”"
-msgstr ""
+msgstr "“text1”"
 
 #: 
 msgid "“test_greeting”"
-msgstr ""
+msgstr "“test_greeting”"
 
 #: 
 msgid "“test_bye”"
-msgstr ""
+msgstr "“test_bye”"
 
 #: 
 msgid "“test_error”"
-msgstr ""
+msgstr "“test_error”"
 
 #: 
 msgid "“test_really”"
-msgstr ""
+msgstr "“test_really”"
 
 #: 
 msgid "“test_foobar”"
-msgstr ""
+msgstr "“test_foobar”"
 
