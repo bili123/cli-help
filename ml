@@ -256,7 +256,7 @@ Textdatei und wir stellen es unter [92mcli.help/cheatsheet_DeinName[0m
 #00
 [31m
 ###########################################
-##            </Temporäres>              ##
+##            </Temporäres test>              ##
 ###########################################.
 .
 .
