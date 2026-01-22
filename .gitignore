@@ -3,4 +3,6 @@ workflow
 scripts
 crap
 release/
+make_release.sh
+
 
