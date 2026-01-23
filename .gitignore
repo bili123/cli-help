@@ -4,5 +4,7 @@ scripts
 crap
 release/
 make_release.sh
+html/
+update_new_article_2.sh
 
 
