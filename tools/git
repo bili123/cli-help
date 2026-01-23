@@ -75,6 +75,11 @@ ausgedrückt: datei1 mit Stand des letzten Commits überschreiben:
 [33m## Suche nach foobar im Log:
 [31m  git log [0m --grep=foobar
 
+[33m## Auch interessant: GitHub-Token im Terminal speichern.
+Speichert das Token nach dem nächsten Push im Klartext!
+[31m git config [0m --global credential.helper store
+
+
 [33m## Und falls Ihr bei Merge-Konflikten mal im vi-Editor landet: i-Taste drücken für 
 Eingabemodus, Merge-Nachricht eingeben. Dann ESC-Taste drücken und folgenden Befehl zum 
 Speichern (w) und Beenden (q) ausführen:
