@@ -30,3 +30,7 @@ FTP-, dann lokales Verzeichnis (!ls):
 [33m## FTP-Prompt: Lokale Datei foobar.txt in
 aktuelles FTP-Verzeichnis hochladen:
 [31m put [0m foobar.txt
+
+[33m## FTP-Prompt: Lokale Datei foobar.txt in
+aktuelles FTP-Verzeichnis hochladen:
+[31m put [0m foobar.txt
